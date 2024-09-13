@@ -16,12 +16,7 @@ export default function Footer() {
       </h1>
       <p className="text-white">Copyright @ 2024 FireshipHub</p>
 
-      <div
-        className="flex items-center hover:cursor-pointer"
-        onClick={() => {
-          window.open("https://github.com/VeressIris/AtestatSeria3");
-        }}
-      >
+      <div className="flex items-center hover:cursor-pointer">
         <div className="flex flex-col">
           <div className="mb-3 flex justify-between">
             <Link
@@ -43,7 +38,12 @@ export default function Footer() {
               Shows
             </Link>
           </div>
-          <div className="flex items-center">
+          <div
+            className="flex items-center"
+            onClick={() => {
+              window.open("https://github.com/VeressIris/AtestatSeria3");
+            }}
+          >
             <svg
               width="28"
               height="28"
@@ -58,7 +58,6 @@ export default function Footer() {
                 fill="#ffffff"
               />
             </svg>
-
             <p className="text-white text-sm">Check us (me) out on GitHub</p>
           </div>
         </div>
