@@ -6,11 +6,19 @@ export default function HomePage() {
       title: "Javascript in 100 seconds",
       description: "lorem ipsum",
       image: "sampleThumbnail.jpg",
+      rating: 8,
     },
     {
       title: "Javascript in 100 seconds",
       description: "lorem ipsum",
       image: "sampleThumbnail.jpg",
+      rating: 8,
+    },
+    {
+      title: "Javascript in 100 seconds",
+      description: "lorem ipsum",
+      image: "sampleThumbnail.jpg",
+      rating: 9,
     },
     {
       title: "Javascript in 100 seconds",
@@ -22,13 +30,7 @@ export default function HomePage() {
       title: "Javascript in 100 seconds",
       description: "lorem ipsum",
       image: "sampleThumbnail.jpg",
-      rating: 9,
-    },
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 9,
+      rating: 9.5,
     },
     {
       title: "Javascript in 100 seconds",
