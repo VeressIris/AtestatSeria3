@@ -17,29 +17,35 @@ export default function Footer() {
       <p className="text-white">Copyright @ 2024 FireshipHub</p>
 
       <div className="flex items-center hover:cursor-pointer">
-        <div className="flex flex-col">
-          <div className="mb-3 flex justify-between">
+        <div className="flex flex-col items-center">
+          <div className="mb-2 flex">
             <Link
               to="/"
-              className="text-white text-md mb-1 rounded-xl active:text-slate-300"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
               Home
             </Link>
             <Link
               to="/movies"
-              className="text-white text-md mb-1 rounded-xl active:text-slate-300"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
               Movies
             </Link>
             <Link
               to="/shows"
-              className="text-white text-md mb-1 rounded-xl active:text-slate-300"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
               Shows
             </Link>
+            <Link
+              to="/categories"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
+            >
+              Categories
+            </Link>
           </div>
           <div
-            className="flex items-center"
+            className="flex items-center justify-between w-full"
             onClick={() => {
               window.open("https://github.com/VeressIris/AtestatSeria3");
             }}
@@ -49,7 +55,7 @@ export default function Footer() {
               height="28"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              className="mr-2"
+              className="ml-2"
             >
               <path
                 fill-rule="evenodd"
@@ -58,7 +64,9 @@ export default function Footer() {
                 fill="#ffffff"
               />
             </svg>
-            <p className="text-white text-sm">Check us (me) out on GitHub</p>
+            <p className="text-white text-sm mr-2">
+              Check us (me) out on GitHub
+            </p>
           </div>
         </div>
       </div>

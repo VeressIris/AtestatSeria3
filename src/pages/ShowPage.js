@@ -1,23 +1,26 @@
+import EpisodeComponent from "../components/EpisodeComponent";
 import { Link } from "react-router-dom";
 
-export default function MoviePage() {
-  const movie = JSON.parse(localStorage.getItem("video"));
-  const rating = movie.rating;
+export default function ShowPage() {
+  const show = JSON.parse(localStorage.getItem("video"));
+  const rating = show.rating;
+  const episodes = show.episodes;
+
   return (
     <div className="flex items-center flex-col">
       <img
-        src={"../" + movie.image}
+        src={"../" + show.image}
         alt="thumbnail"
         className="w-[1080px] mb-4"
       />
       <div className="flex flex-col justify-start w-full">
-        <h1 className="text-3xl text-white font-medium mb-2">{movie.title}</h1>
+        <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
         <p className="text-lg text-white">
-          <span className="font-medium">Release:</span> {movie.releaseDate}
+          <span className="font-medium">Release:</span> {show.releaseDate}
         </p>
         <div className="flex items-center">
           <p className="text-lg text-white font-medium pr-1">Rating:</p>
-          {[...Array(rating)].map((e, i) => (
+          {[...Array(rating)].map(() => (
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
@@ -30,18 +33,24 @@ export default function MoviePage() {
           ))}
         </div>
         <p className="text-lg text-white">
-          <span className="font-medium">Description:</span> {movie.description}
+          <span className="font-medium">Description:</span> {show.description}
         </p>
         <p className="text-lg text-white">
           <span className="font-medium">Category: </span>
           <Link
-            to={"/categories" + movie.category}
+            to={"/categories/" + show.category}
             className="text-white text-md mb-1 rounded-xl active:text-slate-300"
-            onClick={() => localStorage.setItem("category", movie.category)}
+            onClick={() => localStorage.setItem("category", show.category)}
           >
-            {movie.category}
+            {show.category}
           </Link>
         </p>
+        <h2 className="text-white text-3xl font-medium mt-2">Episodes:</h2>
+        <div className="">
+          {episodes.map((episode, index) => (
+            <EpisodeComponent episode={episode} index={index + 1} />
+          ))}
+        </div>
       </div>
     </div>
   );

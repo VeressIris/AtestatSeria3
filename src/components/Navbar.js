@@ -34,6 +34,7 @@ export default function Navbar() {
         <MyAnchor text="Home" link="/" />
         <MyAnchor text="Movies" link="/movies" />
         <MyAnchor text="Shows" link="/shows" />
+        <MyAnchor text="Categories" link="/categories" />
       </div>
     </div>
   );
