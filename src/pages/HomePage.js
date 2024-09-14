@@ -1,81 +1,56 @@
 import Suggestions from "../components/Suggestions.js";
 
 export default function HomePage() {
-  const s = [
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 8,
-      type: "movie",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-    },
-    {
-      title: "Intro to Javascript in 100 seconds",
-      description: "lorem ipsum dolor sit amet",
-      image: "sampleThumbnail.jpg",
-      rating: 9,
-      type: "show",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-      episodes: [
-        {
-          title: "Episode 1: The basics",
-          image: "sampleThumbnail.jpg",
-          description: "lorem ipsum dolor sit amet2",
-        },
-        {
-          title: "Episode 2: The advanced basics",
-          image: "sampleThumbnail.jpg",
-          description: "lorem ipsum dolor sit amet 3",
-        },
-      ],
-    },
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 9,
-      type: "movie",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-    },
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 9,
-      type: "movie",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-    },
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 9.5,
-      type: "movie",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-    },
-    {
-      title: "Javascript in 100 seconds",
-      description: "lorem ipsum",
-      image: "sampleThumbnail.jpg",
-      rating: 9,
-      type: "movie",
-      category: "javascript",
-      releaseDate: "Mar 28, 2023",
-    },
+  function getObjectByTitle(arr, title) {
+    return arr.find((obj) => obj.title === title);
+  }
+
+  const videos = JSON.parse(localStorage.getItem("videos"));
+  const theClassics = [
+    getObjectByTitle(videos, "React in 100 Seconds"),
+    getObjectByTitle(videos, "Git Explained in 100 Seconds"),
+    getObjectByTitle(videos, "CSS Flexbox in 100 Seconds"),
+    getObjectByTitle(videos, "CSS Grid in 100 Seconds"),
+    getObjectByTitle(
+      videos,
+      "GitHub Pull Request in 100 Seconds - Git a FREE sticker 🔥"
+    ),
+    getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
+    getObjectByTitle(videos, "Flutter in 100 seconds"),
+    getObjectByTitle(videos, "CSS Animation in 100 Seconds"),
+    getObjectByTitle(
+      videos,
+      "Graph Search Algorithms in 100 Seconds - And Beyond with JS"
+    ),
+  ];
+  const frameworks = [
+    getObjectByTitle(videos, "React in 100 Seconds"),
+    getObjectByTitle(
+      videos,
+      "Next.js in 100 Seconds // Plus Full Beginner's Tutorial"
+    ),
+    getObjectByTitle(videos, "Flutter in 100 seconds"),
+    getObjectByTitle(videos, "Angular in 100 Seconds"),
+    getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
+  ];
+  const backend = [
+    getObjectByTitle(
+      videos,
+      "RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express"
+    ),
+    getObjectByTitle(videos, "Session vs Token Authentication in 100 Seconds"),
+    getObjectByTitle(videos, "Firebase Security in 100 Seconds"),
+    getObjectByTitle(
+      videos,
+      "WebSockets in 100 Seconds & Beyond with Socket.io"
+    ),
   ];
 
   return (
     <div>
-      <Suggestions title="The classics" suggestions={s} />
-      <Suggestions title="Favorite languages" suggestions={s} />
-      <Suggestions title="Frameworks" suggestions={s} />
-      <Suggestions title="Your intro to backend" suggestions={s} />
+      <Suggestions title="The classics" suggestions={theClassics} />
+      <Suggestions title="Frameworks" suggestions={frameworks} />
+      <Suggestions title="Your intro to backend" suggestions={backend} />
     </div>
   );
 }

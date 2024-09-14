@@ -13,7 +13,7 @@ export default function Suggestions({ title, suggestions }) {
   };
 
   return (
-    <div className="mb-6 relative">
+    <div className="mb-2 relative">
       <h2 className="text-3xl text-white font-bold mb-2">{title}:</h2>
 
       <div className="flex items-center relative">
