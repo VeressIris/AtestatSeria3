@@ -4,349 +4,349 @@
     "release_date": "Dec 17, 2019",
     "description": "Learn Array Map in 100 seconds (of JavaScript).",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "Big-O Notation in 100 Seconds",
     "release_date": "Dec 18, 2019",
     "description": "Learn Big-O Notation in 100 Seconds (of Computer Science).",
     "rating": 9,
-    "category": ["Algorithms", "Computer Science"]
+    "categories": ["Algorithms", "Computer Science"]
   },
   {
     "title": "Array Reduce in 100 seconds",
     "release_date": "Dec 22, 2019",
     "description": "Learn JavaScript's Array Reduce method in 100 seconds. Take many things and reduce them down to one thing.",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "Recursion in 100 Seconds",
     "release_date": "Dec 30, 2019",
     "description": "Learn how recursion",
     "rating": 9,
-    "category": ["Algorithms", "Computer Science"]
+    "categories": ["Algorithms", "Computer Science"]
   },
   {
     "title": "JavaScript Modules in 100 Seconds",
     "release_date": "Jan 02, 2020",
     "description": "Learn how to import and export JS code with ES Modules in 100 seconds.",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "Sign in with Apple from a Firebase Web App",
     "release_date": "Feb 10, 2020",
     "description": "Learn how to Sign in with Apple from your Firebase web app in 100 seconds.",
     "rating": 9,
-    "category": ["Firebase", "Authentication", "Frontend"]
+    "categories": ["Firebase", "Authentication", "Frontend"]
   },
   {
     "title": "Beyond Console Log in 100 Seconds",
     "release_date": "Feb 18, 2020",
     "description": "Ready to go beyond console.log? The JavaScript console can do much more than just log...",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "CSS Flexbox in 100 Seconds",
     "release_date": "Feb 21, 2020",
     "description": "Learn the most important concepts of CSS Flexbox Layout in 100 seconds.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "Electron JS in 100 Seconds",
     "release_date": "Feb 26, 2020",
     "description": "Build your first native desktop app (MacOS, Windows, Linux) in 100 seconds with Electron JS.",
     "rating": 9,
-    "category": ["JavaScript", "Backend", "Desktop Development"]
+    "categories": ["JavaScript", "Backend", "Desktop Development"]
   },
   {
     "title": "Git Explained in 100 Seconds",
     "release_date": "Mar 02, 2020",
     "description": "Learn the basics of Git in 100 seconds.",
     "rating": 9,
-    "category": ["Version Control", "Tools"]
+    "categories": ["Version Control", "Tools"]
   },
   {
     "title": "CSS Grid in 100 Seconds",
     "release_date": "Mar 05, 2020",
     "description": "Learn the basics of CSS Grid in 100 seconds.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "DevOps CI/CD Explained in 100 Seconds",
     "release_date": "Mar 12, 2020",
     "description": "What is DevOps? How to setup a CI/CD pipeline? Learn the basics of continuous integration & delivery.",
     "rating": 9,
-    "category": ["DevOps", "Backend", "Tools"]
+    "categories": ["DevOps", "Backend", "Tools"]
   },
   {
     "title": "GitHub Pull Request in 100 Seconds - Git a FREE sticker 🔥",
     "release_date": "Mar 17, 2020",
     "description": "How to submit your first pull request on GitHub in 100 seconds.",
     "rating": 9,
-    "category": ["Version Control", "GitHub", "Tools"]
+    "categories": ["Version Control", "GitHub", "Tools"]
   },
   {
     "title": "CSS Variables in 100 Seconds",
     "release_date": "Mar 19, 2020",
     "description": "Learn how Custom Properties or CSS Variables work in 100 Seconds.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "What is THIS in JavaScript? in 100 seconds",
     "release_date": "Mar 27, 2020",
     "description": "Learn what the \"this\" keyword does in JavaScript in 100 seconds.",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "Vue.js Explained in 100 Seconds",
     "release_date": "Apr 03, 2020",
     "description": "What is Vue.js? Learn the basics of Vue and build your first reactive UI component in just 100 seconds.",
     "rating": 9,
-    "category": ["Vue.js", "Frontend", "Web Frameworks"]
+    "categories": ["Vue.js", "Frontend", "Web Frameworks"]
   },
   {
     "title": "COBOL in 100 seconds",
     "release_date": "Apr 11, 2020",
     "description": "Learn how COBOL powers the world's mainframe computers in 100 seconds.",
     "rating": 9,
-    "category": ["COBOL", "Languages"]
+    "categories": ["COBOL", "Languages"]
   },
   {
     "title": "Flutter in 100 seconds",
     "release_date": "Apr 14, 2020",
     "description": "Build apps on iOS, Android, the web, and desktop with Flutter in 100 seconds.",
     "rating": 9,
-    "category": ["Flutter", "Frontend", "Mobile Development"]
+    "categories": ["Flutter", "Frontend", "Mobile Development"]
   },
   {
     "title": "CSS Animation in 100 Seconds",
     "release_date": "Apr 21, 2020",
     "description": "Learn the basics of CSS transitions and keyframe animations in 100 seconds.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "Graph Search Algorithms in 100 Seconds - And Beyond with JS",
     "release_date": "Apr 25, 2020",
     "description": "Learn about the graph data structure and basic traversal algorithms like depth-first search (DFS) and breadth-first search (BFS).",
     "rating": 9,
-    "category": ["Algorithms", "Computer Science", "JavaScript"]
+    "categories": ["Algorithms", "Computer Science", "JavaScript"]
   },
   {
     "title": "Deno in 100 Seconds",
     "release_date": "May 05, 2020",
     "description": "Deno is a new JavaScript runtime, similar to Node.js.",
     "rating": 9,
-    "category": ["Deno", "Backend", "JavaScript"]
+    "categories": ["Deno", "Backend", "JavaScript"]
   },
   {
     "title": "Get Paid with Stripe in 100 Seconds",
     "release_date": "May 12, 2020",
     "description": "Stripe makes your wildest app monetization dreams come true.",
     "rating": 9,
-    "category": ["Stripe", "Payment Systems", "Backend"]
+    "categories": ["Stripe", "Payment Systems", "Backend"]
   },
   {
     "title": "Regular Expressions (RegEx) in 100 Seconds",
     "release_date": "May 19, 2020",
     "description": "Learn how to use Regular Expressions, or RegEx, in 100 Seconds.",
     "rating": 9,
-    "category": ["Regex", "Languages", "Tools"]
+    "categories": ["Regex", "Languages", "Tools"]
   },
   {
     "title": "CSS Pseudo-classes: in 100 Seconds",
     "release_date": "Jun 08, 2020",
     "description": "Learn how to use CSS pseudo-classes to style an element based on changes to its state.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "CSS Pseudo-elements :: in 100 Seconds",
     "release_date": "Jun 08, 2020",
     "description": "Learn how to use CSS pseudo-elements to style content that does not actually exist in your HTML.",
     "rating": 9,
-    "category": ["CSS", "Frontend", "Web Design"]
+    "categories": ["CSS", "Frontend", "Web Design"]
   },
   {
     "title": "Docker in 100 Seconds",
     "release_date": "Aug 17, 2020",
     "description": "",
     "rating": 9,
-    "category": ["Docker", "DevOps", "Backend"]
+    "categories": ["Docker", "DevOps", "Backend"]
   },
   {
     "title": "Computer Networking in 100 Seconds",
     "release_date": "Aug 26, 2020",
     "description": "Learn the fundamentals of the OSI model for computer networking in 100 seconds.",
     "rating": 9,
-    "category": ["Networking", "Computer Science"]
+    "categories": ["Networking", "Computer Science"]
   },
   {
     "title": "React in 100 Seconds",
     "release_date": "Sep 08, 2020",
     "description": "Learn the basics of React in 100 Seconds.",
     "rating": 9,
-    "category": ["React", "Frontend", "Web Frameworks"]
+    "categories": ["React", "Frontend", "Web Frameworks"]
   },
   {
     "title": "Angular in 100 Seconds",
     "release_date": "Sep 09, 2020",
     "description": "Learn the basics of Angular in 100 Seconds.",
     "rating": 9,
-    "category": ["Angular", "Frontend", "Web Frameworks"]
+    "categories": ["Angular", "Frontend", "Web Frameworks"]
   },
   {
     "title": "The Legend of jQuery in 100 Seconds",
     "release_date": "Sep 14, 2020",
     "description": "Learn the basics of jQuery in 100 seconds.",
     "rating": 9,
-    "category": ["jQuery", "Frontend", "Web Frameworks"]
+    "categories": ["jQuery", "Frontend", "Web Frameworks"]
   },
   {
     "title": "Kubernetes Explained in 100 Seconds",
     "release_date": "Sep 24, 2020",
     "description": "Learn the basics of Kubernetes and how it's used to scale containers to massive workloads in the cloud.",
     "rating": 9,
-    "category": ["Kubernetes", "DevOps", "Backend"]
+    "categories": ["Kubernetes", "DevOps", "Backend"]
   },
   {
     "title": "NGINX Explained in 100 Seconds",
     "release_date": "Oct 16, 2020",
     "description": "Learn how NGINX is used a web server, reverse proxy, load balancer, and HTTP cache.",
     "rating": 9,
-    "category": ["NGINX", "Web Servers", "Backend"]
+    "categories": ["NGINX", "Web Servers", "Backend"]
   },
   {
     "title": "Web Assembly (WASM) in 100 Seconds",
     "release_date": "Oct 26, 2020",
     "description": "Learn the fundamentals of Web Assembly in 100 Seconds, then build your first WASM binary with AssemblyScript.",
     "rating": 9,
-    "category": ["WebAssembly", "Frontend", "Languages"]
+    "categories": ["WebAssembly", "Frontend", "Languages"]
   },
   {
     "title": "Session vs Token Authentication in 100 Seconds",
     "release_date": "Oct 28, 2020",
     "description": "Learn the difference between session and token-based authentication on the web.",
     "rating": 9,
-    "category": ["Authentication", "Backend"]
+    "categories": ["Authentication", "Backend"]
   },
   {
     "title": "TypeScript in 100 Seconds",
     "release_date": "Nov 25, 2020",
     "description": "Learn the basics of TypeScript in 100 Seconds!",
     "rating": 9,
-    "category": ["TypeScript", "Frontend", "Languages"]
+    "categories": ["TypeScript", "Frontend", "Languages"]
   },
   {
     "title": "Firebase Security in 100 Seconds",
     "release_date": "Dec 03, 2020",
     "description": "",
     "rating": 9,
-    "category": ["Firebase", "Security", "Backend"]
+    "categories": ["Firebase", "Security", "Backend"]
   },
   {
     "title": "WebSockets in 100 Seconds & Beyond with Socket.io",
     "release_date": "Dec 10, 2020",
     "description": "Learn the fundamentals of WebSockets in 100 seconds, then build a simple group chat app with Socket.io.",
     "rating": 9,
-    "category": ["WebSockets", "Socket.io", "Backend"]
+    "categories": ["WebSockets", "Socket.io", "Backend"]
   },
   {
     "title": "Progressive Web Apps in 100 Seconds // Build a PWA from Scratch",
     "release_date": "Dec 16, 2020",
     "description": "Learn how to analyze and implement service workers to make your web app installable.",
     "rating": 9,
-    "category": ["PWA", "Frontend", "Web Design"]
+    "categories": ["PWA", "Frontend", "Web Design"]
   },
   {
     "title": "Next.js in 100 Seconds // Plus Full Beginner's Tutorial",
     "release_date": "Jan 05, 2021",
     "description": "Learn the basics of Next.js in 100 Seconds! Then build your first server-rendered react app with a full Next.js beginner's tutorial.",
     "rating": 9,
-    "category": ["Next.js", "React", "Frontend", "Web Frameworks"]
+    "categories": ["Next.js", "React", "Frontend", "Web Frameworks"]
   },
   {
     "title": "JS Destructuring in 100 Seconds",
     "release_date": "Jan 13, 2021",
     "description": "Make your code more concise and readable by learning destructuring assignment in JavaScript in 100 seconds.",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "Raspberry Pi Explained in 100 Seconds",
     "release_date": "Jan 19, 2021",
     "description": "Learn about all the parts and capabilities of the world's most popular tiny computer.",
     "rating": 9,
-    "category": ["Raspberry Pi", "Hardware", "Computer Science"]
+    "categories": ["Raspberry Pi", "Hardware", "Computer Science"]
   },
   {
     "title": "? in NaN Seconds",
     "release_date": "Jan 22, 2021",
     "description": "Learn how the question mark \"?\" in JavaScript provides syntactic sugar in three powerful ways.",
     "rating": 9,
-    "category": ["JavaScript", "Frontend", "Languages"]
+    "categories": ["JavaScript", "Frontend", "Languages"]
   },
   {
     "title": "~/.dotfiles in 100 Seconds",
     "release_date": "Feb 01, 2021",
     "description": "What are dotfiles? Take your developer productivity to the next level.",
     "rating": 9,
-    "category": ["Dotfiles", "Productivity", "Tools"]
+    "categories": ["Dotfiles", "Productivity", "Tools"]
   },
   {
     "title": "SEO for Developers in 100 Seconds",
     "release_date": "Feb 08, 2021",
     "description": "Learn the fundamentals of Search Engine Optimization (SEO) from the perspective of a web developer.",
     "rating": 9,
-    "category": ["SEO", "Frontend", "Web Design"]
+    "categories": ["SEO", "Frontend", "Web Design"]
   },
   {
     "title": "Vim in 100 Seconds",
     "release_date": "Feb 10, 2021",
     "description": "Vim is a keyboard-based text editor that can improve your productivity when writing code.",
     "rating": 9,
-    "category": ["Vim", "Productivity", "Tools"]
+    "categories": ["Vim", "Productivity", "Tools"]
   },
   {
     "title": "Linux Directories Explained in 100 Seconds",
     "release_date": "Feb 12, 2021",
     "description": "Learn the purpose of the most common Linux directories in 100 seconds.",
     "rating": 9,
-    "category": ["Linux", "Operating Systems"]
+    "categories": ["Linux", "Operating Systems"]
   },
   {
     "title": "GraphQL Explained in 100 Seconds",
     "release_date": "Feb 13, 2021",
     "description": "Learn how GraphQL compares to REST and why developers love this query language for APIs.",
     "rating": 9,
-    "category": ["GraphQL", "APIs", "Backend"]
+    "categories": ["GraphQL", "APIs", "Backend"]
   },
   {
     "title": "Dgraph Graph Database in 100 Seconds",
     "release_date": "Feb 15, 2021",
     "description": "Learn the fundamentals of Dgraph - an open-source Graph Database that implements GraphQL as its query language.",
     "rating": 9,
-    "category": ["Dgraph", "Graph Database", "Backend"]
+    "categories": ["Dgraph", "Graph Database", "Backend"]
   },
   {
     "title": "RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express",
     "release_date": "Feb 19, 2021",
     "description": "Learn how an Application Programming Interface (API) can adhere to Representational State Transfer (REST).",
     "rating": 9,
-    "category": ["REST", "APIs", "Node.js", "Backend"]
+    "categories": ["REST", "APIs", "Node.js", "Backend"]
   },
   {
     "title": "Bitcoin ₿ in 100 Seconds // Build your Own Blockchain",
     "release_date": "Mar 01, 2021",
     "description": "Learn the basics of Bitcoin and how to build your own blockchain.",
     "rating": 9,
-    "category": ["Bitcoin", "Blockchain", "Backend"]
+    "categories": ["Bitcoin", "Blockchain", "Backend"]
   }
 ]
