@@ -10,6 +10,31 @@ import CategoryPage from "./pages/CategoryPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  const categories = [
+    "JavaScript",
+    "Frontend",
+    "Languages",
+    "Backend",
+    "Web Frameworks",
+    "CSS",
+    "Tools",
+  ];
+
+  // get all video data
+  const videos = localStorage.getItem("videos");
+  if (!videos) {
+    import("./videoData.json")
+      .then((data) => {
+        localStorage.setItem("videos", JSON.stringify(data.default));
+        console.log("Loaded videos");
+      })
+      .catch((error) => {
+        console.error("Failed to load videos", error);
+      });
+  } else {
+    console.log("Videos already loaded");
+  }
+
   return (
     <Router>
       <Navbar />
