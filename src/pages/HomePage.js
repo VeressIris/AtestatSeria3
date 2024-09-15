@@ -51,10 +51,6 @@ export default function HomePage() {
       <Suggestions title="The classics" suggestions={theClassics} />
       <Suggestions title="Frameworks" suggestions={frameworks} />
       <Suggestions title="Your intro to backend" suggestions={backend} />
-      {/* <div className="py-4">
-      </div>
-      <div className="py-4">
-      </div> */}
     </div>
   );
 }

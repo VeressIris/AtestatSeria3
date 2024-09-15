@@ -11,7 +11,7 @@ export default function ShowPage() {
       <img
         src={
           "../fireshipIO_thumbnails/" +
-          episodes[0].title.replaceAll(" ", "_").replaceAll("/", "_") +
+          episodes[0].title.replace(/[ /?:]/g, "_") +
           "_thumbnail.jpg"
         }
         alt="thumbnail"

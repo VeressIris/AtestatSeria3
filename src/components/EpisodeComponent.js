@@ -1,14 +1,18 @@
 export default function EpisodeComponent({ episode, index }) {
+  console.log(
+    episode.title
+      .replaceAll(" ", "_")
+      .replaceAll("/", "_")
+      .replaceAll("?", "_")
+      .replaceAll(":", "_")
+  );
   return (
     <div className="p-4 bg-slate-800 my-4 rounded-lg max-w-[650px]">
       <div className="flex items-center mb-2">
         <img
           src={
             "../fireshipIO_thumbnails/" +
-            episode.title
-              .replaceAll(" ", "_")
-              .replaceAll("/", "_")
-              .replaceAll("?", "_") +
+            episode.title.replace(/[ /?:]/g, "_") +
             "_thumbnail.jpg"
           }
           alt={episode.title}

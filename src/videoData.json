@@ -494,5 +494,143 @@
         "description": "Get the full Linux course at https://bit.ly/4crDqtb"
       }
     ]
+  },
+  {
+    "title": "JavaScript Essentials",
+    "release_date": "Dec 17, 2019",
+    "end_date": "Jan 13, 2021",
+    "description": "JavaScript Essentials is a concise video series covering core JavaScript concepts in just 100 seconds. Each episode explores a key feature or function, making it perfect for both beginners and experienced developers looking for a quick refresher.",
+    "rating": 9,
+    "categories": ["JavaScript", "Frontend", "Languages"],
+    "type": "show",
+    "episodes": [
+      {
+        "title": "Array Map in 100 Seconds",
+        "release_date": "Dec 17, 2019",
+        "description": "Learn Array Map in 100 seconds (of JavaScript)."
+      },
+      {
+        "title": "Array Reduce in 100 Seconds",
+        "release_date": "Dec 22, 2019",
+        "description": "Learn JavaScript's Array Reduce method in 100 seconds. Take many things and reduce them down to one thing."
+      },
+      {
+        "title": "JavaScript Modules in 100 Seconds",
+        "release_date": "Jan 02, 2020",
+        "description": "Learn how to import and export JS code with ES Modules in 100 seconds."
+      },
+      {
+        "title": "Beyond Console Log in 100 Seconds",
+        "release_date": "Feb 18, 2020",
+        "description": "Ready to go beyond console.log? The JavaScript console can do much more than just log..."
+      },
+      {
+        "title": "What is THIS in JavaScript? in 100 Seconds",
+        "release_date": "Mar 27, 2020",
+        "description": "Learn what the 'this' keyword does in JavaScript in 100 seconds."
+      },
+      {
+        "title": "Vue.js Explained in 100 Seconds",
+        "release_date": "Apr 03, 2020",
+        "description": "What is Vue.js? Learn the basics of Vue and build your first reactive UI component in just 100 seconds."
+      },
+      {
+        "title": "React in 100 Seconds",
+        "release_date": "Sep 08, 2020",
+        "description": "Learn the basics of React in 100 seconds."
+      },
+      {
+        "title": "? in NaN Seconds",
+        "release_date": "Jan 22, 2021",
+        "description": "Learn how the question mark '?' in JavaScript provides syntactic sugar in three powerful ways."
+      },
+      {
+        "title": "JS Destructuring in 100 Seconds",
+        "release_date": "Jan 13, 2021",
+        "description": "Make your code more concise and readable by learning destructuring assignment in JavaScript in 100 seconds."
+      }
+    ]
+  },
+  {
+    "title": "CSS Masterclass",
+    "release_date": "Feb 21, 2020",
+    "end_date": "Jun 08, 2020",
+    "description": "CSS Masterclass provides a deep dive into the most important aspects of CSS, from layouts to animations, in short 100-second episodes. Ideal for web designers and developers looking to sharpen their frontend skills.",
+    "rating": 9,
+    "categories": ["CSS", "Frontend", "Web Design"],
+    "type": "show",
+    "episodes": [
+      {
+        "title": "CSS Flexbox in 100 Seconds",
+        "release_date": "Feb 21, 2020",
+        "description": "Learn the most important concepts of CSS Flexbox Layout in 100 seconds."
+      },
+      {
+        "title": "CSS Grid in 100 Seconds",
+        "release_date": "Mar 05, 2020",
+        "description": "Learn the basics of CSS Grid in 100 seconds."
+      },
+      {
+        "title": "CSS Variables in 100 Seconds",
+        "release_date": "Mar 19, 2020",
+        "description": "Learn how Custom Properties or CSS Variables work in 100 seconds."
+      },
+      {
+        "title": "CSS Animation in 100 Seconds",
+        "release_date": "Apr 21, 2020",
+        "description": "Learn the basics of CSS transitions and keyframe animations in 100 seconds."
+      },
+      {
+        "title": "CSS Pseudo-classes: in 100 Seconds",
+        "release_date": "Jun 08, 2020",
+        "description": "Learn how to use CSS pseudo-classes to style an element based on changes to its state."
+      },
+      {
+        "title": "CSS Pseudo-elements :: in 100 Seconds",
+        "release_date": "Jun 08, 2020",
+        "description": "Learn how to use CSS pseudo-elements to style content that does not actually exist in your HTML."
+      }
+    ]
+  },
+  {
+    "title": "Backend Basics",
+    "release_date": "Mar 12, 2020",
+    "end_date": "Oct 28, 2020",
+    "description": "Backend Basics demystifies the core concepts of backend development, from version control to containerization, through concise 100-second videos. It’s perfect for developers who want to understand and implement backend services efficiently.",
+    "rating": 9,
+    "categories": ["Backend", "Tools", "DevOps"],
+    "type": "show",
+    "episodes": [
+      {
+        "title": "DevOps CI/CD Explained in 100 Seconds",
+        "release_date": "Mar 12, 2020",
+        "description": "What is DevOps? How to set up a CI/CD pipeline? Learn the basics of continuous integration & delivery."
+      },
+      {
+        "title": "Git Explained in 100 Seconds",
+        "release_date": "Mar 02, 2020",
+        "description": "Learn the basics of Git in 100 seconds."
+      },
+      {
+        "title": "GitHub Pull Request in 100 Seconds",
+        "release_date": "Mar 17, 2020",
+        "description": "How to submit your first pull request on GitHub in 100 seconds."
+      },
+      {
+        "title": "Docker in 100 Seconds",
+        "release_date": "Aug 17, 2020",
+        "description": "Learn the basics of Docker in 100 seconds."
+      },
+      {
+        "title": "Kubernetes Explained in 100 Seconds",
+        "release_date": "Sep 24, 2020",
+        "description": "Learn the basics of Kubernetes and how it scales containers to massive workloads in the cloud."
+      },
+      {
+        "title": "Session vs Token Authentication in 100 Seconds",
+        "release_date": "Oct 28, 2020",
+        "description": "Learn the difference between session and token-based authentication on the web."
+      }
+    ]
   }
 ]

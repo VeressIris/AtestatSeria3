@@ -8,7 +8,7 @@ export default function MoviePage() {
       <img
         src={
           "../fireshipIO_thumbnails/" +
-          movie.title.replaceAll(" ", "_").replaceAll("/", "_") +
+          movie.title.replace(/[ /?:]/g, "_") +
           "_thumbnail.jpg"
         }
         alt="thumbnail"

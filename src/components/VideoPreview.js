@@ -6,11 +6,7 @@ export default function VideoPreview({ video }) {
   function getThumbnailFileName(title) {
     return (
       "/fireshipIO_thumbnails/" +
-      title
-        .replaceAll(" ", "_")
-        .replaceAll("/", "_")
-        .replaceAll("?", "_")
-        .replaceAll(":", "_") +
+      title.replace(/[ /?:]/g, "_") +
       "_thumbnail.jpg"
     );
   }
