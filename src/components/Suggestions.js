@@ -13,7 +13,7 @@ export default function Suggestions({ title, suggestions }) {
   };
 
   return (
-    <div className="mb-2 relative">
+    <div className="relative">
       <h2 className="text-3xl text-white font-bold mb-2">{title}:</h2>
 
       <div className="flex items-center relative">
@@ -37,12 +37,14 @@ export default function Suggestions({ title, suggestions }) {
           })}
         </div>
 
-        <button
-          onClick={scrollRight}
-          className="absolute right-0 z-10 text-white text-xl p-2 rounded-full hover:text-slate-300 active:text-slate-200"
-        >
-          &#9654;
-        </button>
+        {suggestions.length > 5 ? (
+          <button
+            onClick={scrollRight}
+            className="absolute right-0 z-10 text-white text-xl p-2 rounded-full hover:text-slate-300 active:text-slate-200"
+          >
+            &#9654;
+          </button>
+        ) : null}
       </div>
     </div>
   );

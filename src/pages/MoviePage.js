@@ -6,7 +6,11 @@ export default function MoviePage() {
   return (
     <div className="flex items-center flex-col">
       <img
-        src={"../" + movie.image}
+        src={
+          "../fireshipIO_thumbnails/" +
+          movie.title.replaceAll(" ", "_").replaceAll("/", "_") +
+          "_thumbnail.jpg"
+        }
         alt="thumbnail"
         className="w-[1080px] mb-4"
       />
@@ -33,14 +37,18 @@ export default function MoviePage() {
           <span className="font-medium">Description:</span> {movie.description}
         </p>
         <p className="text-lg text-white">
-          <span className="font-medium">Category: </span>
-          <Link
-            to={"/categories" + movie.category}
-            className="text-white text-md mb-1 rounded-xl active:text-slate-300"
-            onClick={() => localStorage.setItem("category", movie.category)}
-          >
-            {movie.category}
-          </Link>
+          <span className="font-medium">Categories: </span>
+          {movie.categories.map((category, index) => {
+            return (
+              <Link
+                to={"/categories" + category}
+                className="text-white text-md mb-1 rounded-xl active:text-red-300 hover:text-red-200"
+                onClick={() => localStorage.setItem("category", category)}
+              >
+                {category},{" "}
+              </Link>
+            );
+          })}
         </p>
       </div>
     </div>
