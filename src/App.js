@@ -30,7 +30,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="px-20 pt-4">
+      <div className="px-20">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />

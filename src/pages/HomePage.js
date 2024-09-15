@@ -49,12 +49,12 @@ export default function HomePage() {
   return (
     <div className="divide-slate-700 divide-y-2 divide-solid">
       <Suggestions title="The classics" suggestions={theClassics} />
-      <div className="py-4">
-        <Suggestions title="Frameworks" suggestions={frameworks} />
+      <Suggestions title="Frameworks" suggestions={frameworks} />
+      <Suggestions title="Your intro to backend" suggestions={backend} />
+      {/* <div className="py-4">
       </div>
       <div className="py-4">
-        <Suggestions title="Your intro to backend" suggestions={backend} />
-      </div>
+      </div> */}
     </div>
   );
 }

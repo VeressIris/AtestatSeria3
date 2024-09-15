@@ -18,7 +18,11 @@ export default function VideoPreview({ video }) {
       <img
         src={
           "/fireshipIO_thumbnails/" +
-          video.title.replaceAll(" ", "_").replaceAll("/", "_") +
+          video.title
+            .replaceAll(" ", "_")
+            .replaceAll("/", "_")
+            .replaceAll("?", "_")
+            .replaceAll(":", "_") +
           "_thumbnail.jpg"
         }
         alt={video.title}
