@@ -15,7 +15,6 @@ export default function Suggestions({ title, suggestions }) {
   return (
     <div className="relative">
       <h2 className="text-3xl text-white font-bold mb-2">{title}:</h2>
-
       <div className="flex items-center relative">
         <button
           onClick={scrollLeft}
@@ -23,7 +22,6 @@ export default function Suggestions({ title, suggestions }) {
         >
           &#9664;
         </button>
-
         <div
           ref={scrollRef}
           className="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth p-2"
@@ -36,7 +34,6 @@ export default function Suggestions({ title, suggestions }) {
             );
           })}
         </div>
-
         {suggestions.length > 5 ? (
           <button
             onClick={scrollRight}
