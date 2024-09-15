@@ -403,7 +403,7 @@
     "title": "CS101",
     "release_date": "Jan 04, 2022",
     "end_date": "Jul 06, 2024",
-    "description": "",
+    "description": "CS101 is a fast-paced series that simplifies key computer science and technology concepts in short videos all under 100 seconds. Covering topics like binary, programming languages, CPUs, Docker, and Linux, it offers clear and concise lessons for both beginners and experienced developers, making complex topics easy to grasp.",
     "rating": 9,
     "categories": ["Backend", "Computer Science", "Tools"],
     "type": "show",

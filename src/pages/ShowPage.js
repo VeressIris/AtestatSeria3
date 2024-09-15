@@ -20,7 +20,8 @@ export default function ShowPage() {
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
         <p className="text-lg text-white">
-          <span className="font-medium">Release:</span> {show.releaseDate}
+          <span className="font-medium">Release:</span> {show.release_date} -{" "}
+          {show.end_date}
         </p>
         <div className="flex items-center">
           <p className="text-lg text-white font-medium pr-1">Rating:</p>
