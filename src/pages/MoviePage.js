@@ -4,7 +4,7 @@ export default function MoviePage() {
   const movie = JSON.parse(localStorage.getItem("video"));
   const rating = movie.rating;
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col my-4">
       <img
         src={
           "../fireshipIO_thumbnails/" +
@@ -41,7 +41,7 @@ export default function MoviePage() {
           {movie.categories.map((category, index) => {
             return (
               <Link
-                to={"/categories" + category}
+                to={"/categories/" + category}
                 className="text-white text-md mb-1 rounded-xl active:text-red-300 hover:text-red-200"
                 onClick={() => localStorage.setItem("category", category)}
               >

@@ -398,5 +398,101 @@
     "rating": 9,
     "categories": ["Bitcoin", "Blockchain", "Backend"],
     "type": "movie"
+  },
+  {
+    "title": "CS101",
+    "release_date": "Jan 04, 2022",
+    "end_date": "Jul 06, 2024",
+    "description": "",
+    "rating": 9,
+    "categories": ["Backend", "Computer Science", "Tools"],
+    "type": "show",
+    "episodes": [
+      {
+        "title": "Binary Explained in 01100100 Seconds",
+        "release_date": "Jan 04, 2022",
+        "description": "Binary is a base-2 numbering system and the final language used by computer hardware. Programmers don't write binary code directly, but it's import to understand how a machine uses transistors to organize billions of bits to represent data. https://fireship.io"
+      },
+      {
+        "title": "Why do computers use RGB for colors, and not RBY?",
+        "release_date": "Jan 04, 2022",
+        "description": "Computer screens use red, green, and blue RGB as pixel colors, but why? They told us in kindergarten that RBY were the primary colors..."
+      },
+      {
+        "title": "r u even turing complete?",
+        "release_date": "Jan 04, 2022",
+        "description": "What does it mean to be Turing Complete? Is HTML & CSS Turing Complete?"
+      },
+      {
+        "title": "WTF is a B\u00e9zier Curve?",
+        "release_date": "Jan 04, 2022",
+        "description": "What is a B"
+      },
+      {
+        "title": "C in 100 Seconds",
+        "release_date": "Jan 04, 2022",
+        "description": "The C Programming Language is quite possibly the most influential language of all time. It powers OS kernels like Linux, Windows, and Mac and many other low-level systems.  Its syntax has inspired many other languages, including Cpp, Csharp, Java, JavaScript, Go, Perl, and more.  "
+      },
+      {
+        "title": "Bash in 100 Seconds",
+        "release_date": "Jan 04, 2022",
+        "description": "Bash is the command line shell that you encounter when you open the terminal on most Unix operating systems, like MacOS and Linux. Learn how to create your own bash scripts to automate tasks on your computer."
+      },
+      {
+        "title": "Why do computers suck at math?",
+        "release_date": "Jan 04, 2022",
+        "description": "What is a floating point number? And why does it produce rounding errors for programmers? "
+      },
+      {
+        "title": "How a CPU Works in 100 Seconds // Apple Silicon M1 vs Intel i9",
+        "release_date": "Jan 04, 2022",
+        "description": "Learn how the central processing unit (CPU) works in your computer. Compare performance and processor architecture between the Intel and Apple Silicon M1 chips with @AZisk "
+      },
+      {
+        "title": "7 Fancy Programming Words",
+        "release_date": "Jan 04, 2022",
+        "description": "Learn the meaning of 7 fancy, yet important, programming terms before your next technical interview https://fireship.io "
+      },
+      {
+        "title": "7 Database Paradigms",
+        "release_date": "Jan 04, 2022",
+        "description": "Learn about seven different database paradigms and what they do best. https://fireship.io/lessons/top-seven-database-paradigms/"
+      },
+      {
+        "title": "Binary Search Algorithm in 100 Seconds",
+        "release_date": "Mar 23, 2022",
+        "description": "Binary Search is an algorithm that can find the index of an element in a sorted array data structure. You've likely used Binary Search it in everyday life without even realizing it. "
+      },
+      {
+        "title": "100+ Computer Science Concepts Explained",
+        "release_date": "May 04, 2022",
+        "description": "Learn the fundamentals of Computer Science with a quick breakdown of jargon that every software engineer should know. Over 100 technical concepts from the CS curriculum are explained to provide a foundation for programmers."
+      },
+      {
+        "title": "100+ Web Development Things you Should Know",
+        "release_date": "Jun 14, 2022",
+        "description": "WebDev 101 is a complete introduction into the world of web development. Learn the basic concepts and skills required to build fullstack web apps with HTML, CSS, and JavaScript. "
+      },
+      {
+        "title": "100+ JavaScript Concepts you Need to Know",
+        "release_date": "Nov 22, 2022",
+        "description": "The ultimate 10 minute JavaScript course that quickly breaks down over 100 key concepts every web developer should know. Learn the basics of JS and start building apps on the web, mobile, desktop, and more. "
+      },
+      {
+        "title": "CPU vs GPU vs TPU vs DPU vs QPU",
+        "release_date": "Aug 26, 2023",
+        "description": "What's the difference between a CPU and GPU? And what the heck is a TPU, DPU, or QPU? Learn the how computers actually compute things in this quick lesson. "
+      },
+      {
+        "title": "100+ Docker Concepts you Need to Know",
+        "release_date": "Mar 12, 2024",
+        "description": "Learn everything you ever wanted to know about containerization is the ultimate Docker tutorial. Build Docker images, run containers, and scale your infrastructure in the cloud  with Docker 101. "
+      },
+      {
+        "title": "100+ Linux Things you Need to Know",
+        "release_date": "Jul 06, 2024",
+        "description": "Get the full Linux course at https://bit.ly/4crDqtb"
+      }
+    ]
   }
 ]

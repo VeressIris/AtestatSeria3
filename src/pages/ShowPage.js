@@ -7,9 +7,13 @@ export default function ShowPage() {
   const episodes = show.episodes;
 
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col my-4">
       <img
-        src={"../" + show.image}
+        src={
+          "../fireshipIO_thumbnails/" +
+          episodes[0].title.replaceAll(" ", "_").replaceAll("/", "_") +
+          "_thumbnail.jpg"
+        }
         alt="thumbnail"
         className="w-[1080px] mb-4"
       />
@@ -36,14 +40,18 @@ export default function ShowPage() {
           <span className="font-medium">Description:</span> {show.description}
         </p>
         <p className="text-lg text-white">
-          <span className="font-medium">Category: </span>
-          <Link
-            to={"/categories/" + show.category}
-            className="text-white text-md mb-1 rounded-xl active:text-slate-300"
-            onClick={() => localStorage.setItem("category", show.category)}
-          >
-            {show.category}
-          </Link>
+          <span className="font-medium">Categories: </span>
+          {show.categories.map((category, index) => {
+            return (
+              <Link
+                to={"/categories/" + category}
+                className="text-white text-md mb-1 rounded-xl active:text-red-300 hover:text-red-200"
+                onClick={() => localStorage.setItem("category", category)}
+              >
+                {category},{" "}
+              </Link>
+            );
+          })}
         </p>
         <h2 className="text-white text-3xl font-medium mt-2">Episodes:</h2>
         <div className="">

@@ -3,7 +3,14 @@ export default function EpisodeComponent({ episode, index }) {
     <div className="p-4 bg-slate-800 my-4 rounded-lg max-w-[650px]">
       <div className="flex items-center mb-2">
         <img
-          src={"../" + episode.image}
+          src={
+            "../fireshipIO_thumbnails/" +
+            episode.title
+              .replaceAll(" ", "_")
+              .replaceAll("/", "_")
+              .replaceAll("?", "_") +
+            "_thumbnail.jpg"
+          }
           alt={episode.title}
           className="w-28 mr-4"
         />
