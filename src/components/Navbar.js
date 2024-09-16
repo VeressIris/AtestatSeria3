@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import MyAnchor from "./MyAnchor";
 
-export default function Navbar() {
+export default function Navbar({ searchTerm, setSearchTerm }) {
   const navigate = useNavigate();
 
   return (
@@ -27,8 +27,17 @@ export default function Navbar() {
           </svg>
           <input
             placeholder="Search"
+            value={searchTerm}
             type="text"
             className="w-auto h-10 pl-10 pr-4 border-2 border-transparent rounded-lg outline-none bg-slate-900 text-white placeholder-gray-400 focus:border-red-500 focus:ring-1 focus:ring-red-700 transition duration-175 ease-in-out"
+            onChange={(e) => {
+              setSearchTerm(e.target.value);
+              if (e.target.value === "") {
+                navigate("/");
+              } else {
+                navigate("/search");
+              }
+            }}
           />
         </div>
         <MyAnchor text="Home" link="/" />

@@ -10,6 +10,9 @@ import CategoryPage from "./pages/CategoryPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import videos from "./videoData.json";
 import AboutPage from "./pages/AboutPage.js";
+import SearchPage from "./pages/SearchPage.js";
+import { useState } from "react";
+
 function App() {
   localStorage.setItem("videos", JSON.stringify(videos));
   // // get all video data
@@ -28,9 +31,11 @@ function App() {
   //   console.log("Videos already loaded");
   // }
 
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <Router>
-      <Navbar />
+      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <div className="px-20">
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -41,6 +46,10 @@ function App() {
           <Route path="/categories/" element={<CategoriesPage />} />
           <Route path="/categories/:name" element={<CategoryPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route
+            path="/search"
+            element={<SearchPage searchTerm={searchTerm} />}
+          />
         </Routes>
       </div>
       <Footer />
