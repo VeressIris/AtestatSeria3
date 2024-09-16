@@ -26,9 +26,9 @@ export default function Suggestions({ title, suggestions }) {
           ref={scrollRef}
           className="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth p-2"
         >
-          {suggestions.map((suggestion) => {
+          {suggestions.map((suggestion, i) => {
             return (
-              <div key={suggestion.id} className="flex-shrink-0 w-72">
+              <div key={i} className="flex-shrink-0 w-72">
                 <VideoPreview video={suggestion} />
               </div>
             );

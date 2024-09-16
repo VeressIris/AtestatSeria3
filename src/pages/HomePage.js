@@ -11,10 +11,7 @@ export default function HomePage() {
     getObjectByTitle(videos, "Git Explained in 100 Seconds"),
     getObjectByTitle(videos, "CSS Flexbox in 100 Seconds"),
     getObjectByTitle(videos, "CSS Grid in 100 Seconds"),
-    getObjectByTitle(
-      videos,
-      "GitHub Pull Request in 100 Seconds - Git a FREE sticker 🔥"
-    ),
+    getObjectByTitle(videos, "GitHub Pull Request in 100 Seconds"),
     getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
     getObjectByTitle(videos, "Flutter in 100 seconds"),
     getObjectByTitle(videos, "CSS Animation in 100 Seconds"),
