@@ -9,6 +9,7 @@ import CategoriesPage from "./pages/CategoriesPage.js";
 import CategoryPage from "./pages/CategoryPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import videos from "./videoData.json";
+import AboutPage from "./pages/AboutPage.js";
 function App() {
   localStorage.setItem("videos", JSON.stringify(videos));
   // // get all video data
@@ -39,6 +40,7 @@ function App() {
           <Route path="/shows/:name" element={<ShowPage />} />
           <Route path="/categories/" element={<CategoriesPage />} />
           <Route path="/categories/:name" element={<CategoryPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
       <Footer />

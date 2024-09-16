@@ -43,6 +43,12 @@ export default function Footer() {
             >
               Categories
             </Link>
+            <Link
+              to="/about"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
+            >
+              About us
+            </Link>
           </div>
           <div
             className="flex items-center justify-between w-full"
