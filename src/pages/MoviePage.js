@@ -1,10 +1,11 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Suggestions from "../components/Suggestions";
+import VideoPlayer from "../components/VideoPlayer";
 
 export default function MoviePage() {
-  const { movieTitle } = useParams(); // Get movie title from the URL params
-  const location = useLocation(); // Get the current URL
+  const { movieTitle } = useParams();
+  const location = useLocation();
   const [movie, setMovie] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
 
@@ -29,7 +30,15 @@ export default function MoviePage() {
 
   return (
     <div className="flex items-center flex-col my-4">
-      <img
+      <VideoPlayer
+        thumbnail={
+          "../fireshipIO_thumbnails/" +
+          movie.title.replace(/[ /?:]/g, "_") +
+          "_thumbnail.jpg"
+        }
+        videoSrc={"../fireshipIO_videos/" + "C in 100 Seconds" + ".mp4"}
+      />
+      {/* <img
         src={
           "../fireshipIO_thumbnails/" +
           movie.title.replace(/[ /?:]/g, "_") +
@@ -37,7 +46,7 @@ export default function MoviePage() {
         }
         alt="thumbnail"
         className="w-[1080px] mb-4"
-      />
+      /> */}
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{movie.title}</h1>
         <p className="text-lg text-white">
