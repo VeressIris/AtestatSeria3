@@ -15,7 +15,6 @@ export default function VideoPreview({ video }) {
     video.type === "movie"
       ? getThumbnailFileName(video.title)
       : getThumbnailFileName(video.episodes[0].title);
-  console.log(thumbnail);
 
   return (
     <div

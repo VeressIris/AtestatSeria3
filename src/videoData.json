@@ -11,7 +11,7 @@
     "title": "Big-O Notation in 100 Seconds",
     "release_date": "Dec 18, 2019",
     "description": "Learn Big-O Notation in 100 Seconds (of Computer Science).",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Algorithms", "Computer Science"],
     "type": "movie"
   },
@@ -19,7 +19,7 @@
     "title": "Array Reduce in 100 seconds",
     "release_date": "Dec 22, 2019",
     "description": "Learn JavaScript's Array Reduce method in 100 seconds. Take many things and reduce them down to one thing.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["JavaScript", "Frontend", "Languages"],
     "type": "movie"
   },
@@ -27,7 +27,7 @@
     "title": "Recursion in 100 Seconds",
     "release_date": "Dec 30, 2019",
     "description": "Learn how recursion",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Algorithms", "Computer Science"],
     "type": "movie"
   },
@@ -43,7 +43,7 @@
     "title": "Sign in with Apple from a Firebase Web App",
     "release_date": "Feb 10, 2020",
     "description": "Learn how to Sign in with Apple from your Firebase web app in 100 seconds.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Firebase", "Authentication", "Frontend"],
     "type": "movie"
   },
@@ -51,7 +51,7 @@
     "title": "Beyond Console Log in 100 Seconds",
     "release_date": "Feb 18, 2020",
     "description": "Ready to go beyond console.log? The JavaScript console can do much more than just log...",
-    "rating": 9,
+    "rating": 8,
     "categories": ["JavaScript", "Frontend", "Languages"],
     "type": "movie"
   },
@@ -59,7 +59,7 @@
     "title": "CSS Flexbox in 100 Seconds",
     "release_date": "Feb 21, 2020",
     "description": "Learn the most important concepts of CSS Flexbox Layout in 100 seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["CSS", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -67,7 +67,7 @@
     "title": "Electron JS in 100 Seconds",
     "release_date": "Feb 26, 2020",
     "description": "Build your first native desktop app (MacOS, Windows, Linux) in 100 seconds with Electron JS.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["JavaScript", "Backend", "Desktop Development"],
     "type": "movie"
   },
@@ -75,7 +75,7 @@
     "title": "Git Explained in 100 Seconds",
     "release_date": "Mar 02, 2020",
     "description": "Learn the basics of Git in 100 seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Version Control", "Tools"],
     "type": "movie"
   },
@@ -83,7 +83,7 @@
     "title": "CSS Grid in 100 Seconds",
     "release_date": "Mar 05, 2020",
     "description": "Learn the basics of CSS Grid in 100 seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["CSS", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -91,7 +91,7 @@
     "title": "DevOps CI/CD Explained in 100 Seconds",
     "release_date": "Mar 12, 2020",
     "description": "What is DevOps? How to setup a CI/CD pipeline? Learn the basics of continuous integration & delivery.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["DevOps", "Backend", "Tools"],
     "type": "movie"
   },
@@ -115,7 +115,7 @@
     "title": "What is THIS in JavaScript? in 100 seconds",
     "release_date": "Mar 27, 2020",
     "description": "Learn what the \"this\" keyword does in JavaScript in 100 seconds.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["JavaScript", "Frontend", "Languages"],
     "type": "movie"
   },
@@ -131,7 +131,7 @@
     "title": "COBOL in 100 seconds",
     "release_date": "Apr 11, 2020",
     "description": "Learn how COBOL powers the world's mainframe computers in 100 seconds.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["COBOL", "Languages"],
     "type": "movie"
   },
@@ -139,7 +139,7 @@
     "title": "Flutter in 100 seconds",
     "release_date": "Apr 14, 2020",
     "description": "Build apps on iOS, Android, the web, and desktop with Flutter in 100 seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Flutter", "Frontend", "Mobile Development"],
     "type": "movie"
   },
@@ -163,7 +163,7 @@
     "title": "Deno in 100 Seconds",
     "release_date": "May 05, 2020",
     "description": "Deno is a new JavaScript runtime, similar to Node.js.",
-    "rating": 9,
+    "rating": 7,
     "categories": ["Deno", "Backend", "JavaScript"],
     "type": "movie"
   },
@@ -171,7 +171,7 @@
     "title": "Get Paid with Stripe in 100 Seconds",
     "release_date": "May 12, 2020",
     "description": "Stripe makes your wildest app monetization dreams come true.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Stripe", "Payment Systems", "Backend"],
     "type": "movie"
   },
@@ -179,7 +179,7 @@
     "title": "Regular Expressions (RegEx) in 100 Seconds",
     "release_date": "May 19, 2020",
     "description": "Learn how to use Regular Expressions, or RegEx, in 100 Seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Regex", "Languages", "Tools"],
     "type": "movie"
   },
@@ -187,7 +187,7 @@
     "title": "CSS Pseudo-classes: in 100 Seconds",
     "release_date": "Jun 08, 2020",
     "description": "Learn how to use CSS pseudo-classes to style an element based on changes to its state.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["CSS", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -195,7 +195,7 @@
     "title": "CSS Pseudo-elements :: in 100 Seconds",
     "release_date": "Jun 08, 2020",
     "description": "Learn how to use CSS pseudo-elements to style content that does not actually exist in your HTML.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["CSS", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -219,7 +219,7 @@
     "title": "React in 100 Seconds",
     "release_date": "Sep 08, 2020",
     "description": "Learn the basics of React in 100 Seconds.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["React", "Frontend", "Web Frameworks"],
     "type": "movie"
   },
@@ -275,7 +275,7 @@
     "title": "TypeScript in 100 Seconds",
     "release_date": "Nov 25, 2020",
     "description": "Learn the basics of TypeScript in 100 Seconds!",
-    "rating": 9,
+    "rating": 10,
     "categories": ["TypeScript", "Frontend", "Languages"],
     "type": "movie"
   },
@@ -299,7 +299,7 @@
     "title": "Progressive Web Apps in 100 Seconds // Build a PWA from Scratch",
     "release_date": "Dec 16, 2020",
     "description": "Learn how to analyze and implement service workers to make your web app installable.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["PWA", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -315,7 +315,7 @@
     "title": "JS Destructuring in 100 Seconds",
     "release_date": "Jan 13, 2021",
     "description": "Make your code more concise and readable by learning destructuring assignment in JavaScript in 100 seconds.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["JavaScript", "Frontend", "Languages"],
     "type": "movie"
   },
@@ -347,7 +347,7 @@
     "title": "SEO for Developers in 100 Seconds",
     "release_date": "Feb 08, 2021",
     "description": "Learn the fundamentals of Search Engine Optimization (SEO) from the perspective of a web developer.",
-    "rating": 9,
+    "rating": 7,
     "categories": ["SEO", "Frontend", "Web Design"],
     "type": "movie"
   },
@@ -363,7 +363,7 @@
     "title": "Linux Directories Explained in 100 Seconds",
     "release_date": "Feb 12, 2021",
     "description": "Learn the purpose of the most common Linux directories in 100 seconds.",
-    "rating": 9,
+    "rating": 7,
     "categories": ["Linux", "Operating Systems"],
     "type": "movie"
   },
@@ -379,7 +379,7 @@
     "title": "Dgraph Graph Database in 100 Seconds",
     "release_date": "Feb 15, 2021",
     "description": "Learn the fundamentals of Dgraph - an open-source Graph Database that implements GraphQL as its query language.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Dgraph", "Graph Database", "Backend"],
     "type": "movie"
   },
@@ -387,7 +387,7 @@
     "title": "RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express",
     "release_date": "Feb 19, 2021",
     "description": "Learn how an Application Programming Interface (API) can adhere to Representational State Transfer (REST).",
-    "rating": 9,
+    "rating": 10,
     "categories": ["REST", "APIs", "Node.js", "Backend"],
     "type": "movie"
   },
@@ -395,7 +395,7 @@
     "title": "Bitcoin ₿ in 100 Seconds // Build your Own Blockchain",
     "release_date": "Mar 01, 2021",
     "description": "Learn the basics of Bitcoin and how to build your own blockchain.",
-    "rating": 9,
+    "rating": 7,
     "categories": ["Bitcoin", "Blockchain", "Backend"],
     "type": "movie"
   },
@@ -485,7 +485,7 @@
     "release_date": "Dec 17, 2019",
     "end_date": "Jan 13, 2021",
     "description": "JavaScript Essentials is a concise video series covering core JavaScript concepts in just 100 seconds. Each episode explores a key feature or function, making it perfect for both beginners and experienced developers looking for a quick refresher.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["JavaScript", "Frontend", "Languages"],
     "type": "show",
     "episodes": [
@@ -541,7 +541,7 @@
     "release_date": "Feb 21, 2020",
     "end_date": "Jun 08, 2020",
     "description": "CSS Masterclass provides a deep dive into the most important aspects of CSS, from layouts to animations, in short 100-second episodes. Ideal for web designers and developers looking to sharpen their frontend skills.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["CSS", "Frontend", "Web Design"],
     "type": "show",
     "episodes": [

@@ -1,10 +1,42 @@
 import EpisodeComponent from "../components/EpisodeComponent";
 import { Link } from "react-router-dom";
+import Suggestions from "../components/Suggestions";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 export default function ShowPage() {
-  const show = JSON.parse(localStorage.getItem("video"));
+  // const show = JSON.parse(localStorage.getItem("video"));
+  // const rating = show.rating;
+  // const episodes = show.episodes;
+
+  const { showTitle } = useParams(); // Get movie title from the URL params
+  const location = useLocation(); // Get the current URL
+  const [show, setShow] = useState(null);
+  const [suggestions, setSuggestions] = useState([]);
+  const [episodes, setEpisodes] = useState([]);
+
+  useEffect(() => {
+    const storedShow = JSON.parse(localStorage.getItem("video"));
+    setShow(storedShow);
+
+    const videos = JSON.parse(localStorage.getItem("videos"));
+    const relatedSuggestions = videos.filter((video) => {
+      return video.categories.some((category) =>
+        storedShow.categories.includes(category)
+      );
+    });
+    setSuggestions(relatedSuggestions);
+
+    const episodes = storedShow.episodes;
+    setEpisodes(episodes);
+  }, [showTitle, location.pathname]);
+
+  if (!show) {
+    return <div>Loading...</div>; // Handle case where movie is null
+  }
+
   const rating = show.rating;
-  const episodes = show.episodes;
 
   return (
     <div className="flex items-center flex-col my-4">
@@ -60,6 +92,7 @@ export default function ShowPage() {
             <EpisodeComponent episode={episode} index={index + 1} />
           ))}
         </div>
+        <Suggestions title="Suggestions" suggestions={suggestions} />
       </div>
     </div>
   );

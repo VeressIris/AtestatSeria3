@@ -1,8 +1,32 @@
-import { Link } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Suggestions from "../components/Suggestions";
 
 export default function MoviePage() {
-  const movie = JSON.parse(localStorage.getItem("video"));
+  const { movieTitle } = useParams(); // Get movie title from the URL params
+  const location = useLocation(); // Get the current URL
+  const [movie, setMovie] = useState(null);
+  const [suggestions, setSuggestions] = useState([]);
+
+  useEffect(() => {
+    const storedMovie = JSON.parse(localStorage.getItem("video"));
+    setMovie(storedMovie);
+
+    const videos = JSON.parse(localStorage.getItem("videos"));
+    const relatedSuggestions = videos.filter((video) => {
+      return video.categories.some((category) =>
+        storedMovie.categories.includes(category)
+      );
+    });
+    setSuggestions(relatedSuggestions);
+  }, [movieTitle, location.pathname]);
+
+  if (!movie) {
+    return <div>Loading...</div>;
+  }
+
   const rating = movie.rating;
+
   return (
     <div className="flex items-center flex-col my-4">
       <img
@@ -23,6 +47,7 @@ export default function MoviePage() {
           <p className="text-lg text-white font-medium pr-1">Rating:</p>
           {[...Array(rating)].map((e, i) => (
             <svg
+              key={i}
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 0 24 24"
@@ -38,18 +63,18 @@ export default function MoviePage() {
         </p>
         <p className="text-lg text-white">
           <span className="font-medium">Categories: </span>
-          {movie.categories.map((category, index) => {
-            return (
-              <Link
-                to={"/categories/" + category}
-                className="text-white text-md mb-1 rounded-xl active:text-red-300 hover:text-red-200"
-                onClick={() => localStorage.setItem("category", category)}
-              >
-                {category},{" "}
-              </Link>
-            );
-          })}
+          {movie.categories.map((category, index) => (
+            <Link
+              key={index}
+              to={"/categories/" + category}
+              className="text-white text-md mb-1 rounded-xl active:text-red-300 hover:text-red-200"
+              onClick={() => localStorage.setItem("category", category)}
+            >
+              {category},{" "}
+            </Link>
+          ))}
         </p>
+        <Suggestions title="Suggestions" suggestions={suggestions} />
       </div>
     </div>
   );

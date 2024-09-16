@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage.js";
 import CategoriesPage from "./pages/CategoriesPage.js";
 import CategoryPage from "./pages/CategoryPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import videos from "./videoData.json";
 import AboutPage from "./pages/AboutPage.js";
 import SearchPage from "./pages/SearchPage.js";
@@ -15,21 +16,6 @@ import { useState } from "react";
 
 function App() {
   localStorage.setItem("videos", JSON.stringify(videos));
-  // // get all video data
-  // var videos = localStorage.getItem("videos");
-  // if (!videos) {
-  //   import("./videoData.json")
-  //     .then((data) => {
-  //       localStorage.setItem("videos", JSON.stringify(data.default));
-  //       console.log("Loaded videos");
-  //     })
-  //     .catch((error) => {
-  //       console.error("Failed to load videos", error);
-  //     });
-  // } else {
-  //   videos = JSON.parse(videos);
-  //   console.log("Videos already loaded");
-  // }
 
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -41,7 +27,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />
           <Route path="/shows" element={<ShowsPage />} />
-          <Route path="/movies/:name" element={<MoviePage />} />
+          <Route
+            path="/movies/:name"
+            element={<MoviePage key={useLocation} />}
+          />
           <Route path="/shows/:name" element={<ShowPage />} />
           <Route path="/categories/" element={<CategoriesPage />} />
           <Route path="/categories/:name" element={<CategoryPage />} />
