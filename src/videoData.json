@@ -414,21 +414,6 @@
         "description": "Binary is a base-2 numbering system and the final language used by computer hardware. Programmers don't write binary code directly, but it's import to understand how a machine uses transistors to organize billions of bits to represent data. https://fireship.io"
       },
       {
-        "title": "Why do computers use RGB for colors, and not RBY?",
-        "release_date": "Jan 04, 2022",
-        "description": "Computer screens use red, green, and blue RGB as pixel colors, but why? They told us in kindergarten that RBY were the primary colors..."
-      },
-      {
-        "title": "r u even turing complete?",
-        "release_date": "Jan 04, 2022",
-        "description": "What does it mean to be Turing Complete? Is HTML & CSS Turing Complete?"
-      },
-      {
-        "title": "WTF is a B\u00e9zier Curve?",
-        "release_date": "Jan 04, 2022",
-        "description": "What is a B"
-      },
-      {
         "title": "C in 100 Seconds",
         "release_date": "Jan 04, 2022",
         "description": "The C Programming Language is quite possibly the most influential language of all time. It powers OS kernels like Linux, Windows, and Mac and many other low-level systems.  Its syntax has inspired many other languages, including Cpp, Csharp, Java, JavaScript, Go, Perl, and more.  "
