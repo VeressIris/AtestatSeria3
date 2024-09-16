@@ -6,14 +6,22 @@ export default function Footer() {
 
   return (
     <div className="w-full h-auto py-4 px-20 bg-slate-800 flex items-center justify-between">
-      <h1
-        onClick={() => {
-          navigate("/");
-        }}
-        className="font-bold text-2xl text-white hover:cursor-pointer"
-      >
-        Fireship<span className="text-red-500">Hub</span>
-      </h1>
+      <div className="flex flex-col">
+        <h1
+          onClick={() => {
+            navigate("/");
+          }}
+          className="font-bold text-2xl text-white mt-5 hover:cursor-pointer"
+        >
+          Fireship<span className="text-red-500">Hub</span>
+        </h1>
+        <Link
+          to="/about"
+          className="text-white text-md mb-1 rounded-xl active:text-slate-400 hover:text-slate-300"
+        >
+          About us
+        </Link>
+      </div>
       <p className="text-white">Copyright @ 2024 FireshipHub</p>
 
       <div className="flex items-center hover:cursor-pointer">
@@ -42,12 +50,6 @@ export default function Footer() {
               className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
               Categories
-            </Link>
-            <Link
-              to="/about"
-              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
-            >
-              About us
             </Link>
           </div>
           <div
