@@ -59,9 +59,16 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     video.current.currentTime += 10;
   }
 
+  const [isFullscreen, setFullscreen] = useState(false);
+
   function fullscreen() {
-    if (document.fullscreenElement) document.exitFullscreen();
-    else videoContainer.current.requestFullscreen();
+    if (document.fullscreenElement) {
+      document.exitFullscreen();
+      setFullscreen(false);
+    } else {
+      videoContainer.current.requestFullscreen();
+      setFullscreen(true);
+    }
   }
 
   const [showVolume, setShowVolume] = useState(false);
@@ -78,8 +85,10 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     if (showSpeed) setShowSpeed(false);
     else setShowSpeed(true);
   }
+  const [selectedSpeed, setSelectedSpeed] = useState(1);
   function speed(value) {
     video.current.playbackRate = value;
+    setSelectedSpeed(value);
     setShowSpeed(false);
   }
 
@@ -165,7 +174,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
                   {currentTime} / {maxTime}
                 </p>
                 {showVolume ? (
-                  <div className="absolute w-10 h-40 bg-white bg-opacity-60 rounded-t-2xl bottom-full left-20">
+                  <div className="absolute w-10 h-40 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full left-20">
                     <input
                       type="range"
                       min="1"
@@ -218,57 +227,91 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
                 >
                   <path d="M418-340q24 24 62 23.5t56-27.5l224-336-336 224q-27 18-28.5 55t22.5 61Zm62-460q59 0 113.5 16.5T696-734l-76 48q-33-17-68.5-25.5T480-720q-133 0-226.5 93.5T160-400q0 42 11.5 83t32.5 77h552q23-38 33.5-79t10.5-85q0-36-8.5-70T766-540l48-76q30 47 47.5 100T880-406q1 57-13 109t-41 99q-11 18-30 28t-40 10H204q-21 0-40-10t-30-28q-26-45-40-95.5T80-400q0-83 31.5-155.5t86-127Q252-737 325-768.5T480-800Zm7 313Z" />
                 </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  viewBox="0 -960 960 960"
-                  width="24px"
-                  fill="#e8eaed"
-                  onClick={fullscreen}
-                >
-                  <path d="M120-120v-200h80v120h120v80H120Zm520 0v-80h120v-120h80v200H640ZM120-640v-200h200v80H200v120h-80Zm640 0v-120H640v-80h200v200h-80Z" />
-                </svg>
+                {!isFullscreen ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                    onClick={fullscreen}
+                  >
+                    <path d="M120-120v-200h80v120h120v80H120Zm520 0v-80h120v-120h80v200H640ZM120-640v-200h200v80H200v120h-80Zm640 0v-120H640v-80h200v200h-80Z" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24px"
+                    viewBox="0 -960 960 960"
+                    width="24px"
+                    fill="#e8eaed"
+                    onClick={fullscreen}
+                  >
+                    <path d="m136-80-56-56 264-264H160v-80h320v320h-80v-184L136-80Zm344-400v-320h80v184l264-264 56 56-264 264h184v80H480Z" />
+                  </svg>
+                )}
 
                 {showSpeed ? (
-                  <div className="absolute w-20 h-44 bg-white bg-opacity-60 rounded-t-2xl bottom-full right-16 flex flex-col items-center justify-center">
+                  <div className="absolute w-20 h-44 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full right-16 flex flex-col items-center justify-center">
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 0.25 ? " font-bold" : "")
+                      }
                       onClick={() => speed(0.25)}
                     >
                       0.25x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 0.5 ? " font-bold" : "")
+                      }
                       onClick={() => speed(0.5)}
                     >
                       0.5x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 0.75 ? " font-bold" : "")
+                      }
                       onClick={() => speed(0.75)}
                     >
                       0.75x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 1 ? " font-bold" : "")
+                      }
                       onClick={() => speed(1)}
                     >
                       1x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 1.25 ? " font-bold" : "")
+                      }
                       onClick={() => speed(1.25)}
                     >
                       1.25x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 1.5 ? " font-bold" : "")
+                      }
                       onClick={() => speed(1.5)}
                     >
                       1.5x
                     </button>
                     <button
-                      className="w-full font-semibold"
+                      className={
+                        "w-full text-white active:text-slate-400 hover:text-slate-300" +
+                        (selectedSpeed === 2 ? " font-bold" : "")
+                      }
                       onClick={() => speed(2)}
                     >
                       2x
