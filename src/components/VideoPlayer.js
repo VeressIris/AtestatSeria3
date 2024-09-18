@@ -1,4 +1,3 @@
-import { clear } from "@testing-library/user-event/dist/clear";
 import { useEffect, useRef, useState } from "react";
 
 export default function VideoPlayer({ thumbnail, videoSrc }) {
@@ -21,7 +20,11 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   const menuPlayButton = useRef();
 
   const [clicks, setClicks] = useState(0);
-  const ads = ["https://fireship.io", "https://x.com/fireship_dev"];
+  const ads = [
+    "https://fireship.io",
+    "https://x.com/fireship_dev",
+    "https://swag.fireship.io/",
+  ];
   function getRandomAd() {
     return ads[Math.floor(Math.random() * ads.length)];
   }
@@ -142,6 +145,34 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   document.onmousedown = startInactivityTimer;
   document.onmousemove = startInactivityTimer;
   document.onkeydown = startInactivityTimer;
+
+  const resetState = () => {
+    setCurrentTime("0:00");
+    setMaxTime("0:00");
+    setpercentTime("0%");
+    setIsPlaying(false);
+    setStarted(false);
+    setIsLooping(false);
+    setFullscreen(false);
+    setShowVolume(false);
+    setShowSpeed(false);
+    setSelectedSpeed(1);
+    if (video.current) {
+      video.current.currentTime = 0;
+      video.current.playbackRate = 1;
+      video.current.loop = false;
+      video.current.volume = 1;
+      video.current.src = videoSrc;
+    }
+    if (playButton.current) {
+      playButton.current.style.display = "block";
+    }
+  };
+
+  // UseEffect to handle videoSrc change
+  useEffect(() => {
+    resetState();
+  }, [videoSrc]);
 
   return (
     <div className="mb-4">

@@ -4,11 +4,11 @@ import Suggestions from "../components/Suggestions";
 import VideoPlayer from "../components/VideoPlayer";
 
 export default function MoviePage() {
-  const { movieTitle } = useParams();
+  const { name } = useParams();
   const location = useLocation();
   const [movie, setMovie] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
-
+  console.log(name);
   useEffect(() => {
     const storedMovie = JSON.parse(localStorage.getItem("video"));
     setMovie(storedMovie);
@@ -20,7 +20,7 @@ export default function MoviePage() {
       );
     });
     setSuggestions(relatedSuggestions);
-  }, [movieTitle, location.pathname]);
+  }, [name, location.pathname]);
 
   if (!movie) {
     return <div>Loading...</div>;
@@ -36,17 +36,8 @@ export default function MoviePage() {
           movie.title.replace(/[ /?:]/g, "_") +
           "_thumbnail.jpg"
         }
-        videoSrc={"../fireshipIO_videos/" + "C in 100 Seconds" + ".mp4"}
+        videoSrc={"../fireshipIO_videos/" + name + ".mp4"}
       />
-      {/* <img
-        src={
-          "../fireshipIO_thumbnails/" +
-          movie.title.replace(/[ /?:]/g, "_") +
-          "_thumbnail.jpg"
-        }
-        alt="thumbnail"
-        className="w-[1080px] mb-4"
-      /> */}
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{movie.title}</h1>
         <p className="text-lg text-white">
