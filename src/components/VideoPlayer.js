@@ -108,6 +108,18 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     return () => document.removeEventListener("keydown", playIfSpace);
   });
 
+  function setProgress(event) {
+    const mouseX = event.clientX;
+    const barWidth = event.target.offsetWidth;
+    const clickX = mouseX - event.target.getBoundingClientRect().left;
+
+    const newProgress = (clickX / barWidth) * 100;
+    setpercentTime(newProgress + "%");
+
+    video.current.currentTime = (clickX / barWidth) * video.current.duration;
+    setCurrentTime(convertTime(video.current.currentTime));
+  }
+
   return (
     <div className="mb-4">
       <div
@@ -151,7 +163,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
             className="py-3 absolute bottom-0 left-0 w-full px-5 bg-slate-500 bg-opacity-20 flex flex-col items-center pointer-events-auto group-hover:!flex"
             style={{ display: video?.current?.paused ? "flex" : "none" }}
           >
-            <div className="w-full h-2 bg-black">
+            <div className="w-full h-2 bg-black" onClick={setProgress}>
               <div
                 className="h-full bg-red-500"
                 style={{ width: percentTime }}
