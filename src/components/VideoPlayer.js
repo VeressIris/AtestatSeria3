@@ -1,3 +1,4 @@
+import { clear } from "@testing-library/user-event/dist/clear";
 import { useEffect, useRef, useState } from "react";
 
 export default function VideoPlayer({ thumbnail, videoSrc }) {
@@ -21,10 +22,12 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
 
   const [clicks, setClicks] = useState(0);
   const ads = ["https://fireship.io", "https://x.com/fireship_dev"];
+  function getRandomAd() {
+    return ads[Math.floor(Math.random() * ads.length)];
+  }
   function showAds() {
     if (clicks >= 2) return;
-    const ad = ads[Math.floor(Math.random() * ads.length)];
-    window.open(ad, "_blank");
+    window.open(getRandomAd(), "_blank");
   }
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -125,6 +128,20 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     video.current.currentTime = (clickX / barWidth) * video.current.duration;
     setCurrentTime(convertTime(video.current.currentTime));
   }
+
+  let timeout = false;
+  function startInactivityTimer() {
+    if (timeout) return;
+    timeout = true;
+    setTimeout(() => {
+      window.open(getRandomAd(), "_blank");
+      timeout = false;
+    }, 35000);
+  }
+
+  document.onmousedown = startInactivityTimer;
+  document.onmousemove = startInactivityTimer;
+  document.onkeydown = startInactivityTimer;
 
   return (
     <div className="mb-4">
