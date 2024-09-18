@@ -19,14 +19,6 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
 
   const menuPlayButton = useRef();
 
-  function pauseIfPlayed() {
-    if (!video.current.paused) {
-      video.current.pause();
-      playButton.current.style.display = "block";
-      menuPlayButton.current.src = "/video-player/play.png";
-    }
-  }
-
   function play() {
     video.current.play();
     playButton.current.style.display = "none";
@@ -34,13 +26,18 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     setMaxTime(convertTime(video.current.duration));
   }
 
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [started, setStarted] = useState(false);
   function menuPlay() {
+    setStarted(true);
     if (video.current.paused) {
+      setIsPlaying(true);
       video.current.play();
       playButton.current.style.display = "none";
       menuPlayButton.current.src = "/video-player/pause.png";
       setMaxTime(convertTime(video.current.duration));
     } else {
+      setIsPlaying(false);
       video.current.pause();
       playButton.current.style.display = "block";
       menuPlayButton.current.src = "/video-player/play.png";
@@ -60,7 +57,6 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   }
 
   const [isFullscreen, setFullscreen] = useState(false);
-
   function fullscreen() {
     if (document.fullscreenElement) {
       document.exitFullscreen();
@@ -115,28 +111,39 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
         className="group relative w-[1080px] aspect-video"
         ref={videoContainer}
       >
-        <div
-          onClick={pauseIfPlayed}
-          onDoubleClick={fullscreen}
-          className="w-full"
-        >
+        <div onClick={menuPlay} onDoubleClick={fullscreen} className="w-full">
           <video className="w-full" controls={false} ref={video}>
             <source src={videoSrc} type="video/mp4" />
           </video>
         </div>
 
         <div className="absolute top-0 w-full h-full flex flex-col justify-center items-center pointer-events-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="56px"
-            width="56px"
-            viewBox="0 -960 960 960"
-            fill="#e8eaed"
-            ref={playButton}
-            onClick={play}
-          >
-            <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-          </svg>
+          {!started ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="56px"
+              width="56px"
+              viewBox="0 -960 960 960"
+              fill="#e8eaed"
+              ref={playButton}
+              onClick={play}
+            >
+              <path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="56px"
+              viewBox="0 -960 960 960"
+              width="56px"
+              fill="#e8eaed"
+              ref={playButton}
+              onClick={play}
+            >
+              <path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
+            </svg>
+          )}
+
           <div
             className="py-3 absolute bottom-0 left-0 w-full px-5 bg-slate-500 bg-opacity-20 flex flex-col items-center pointer-events-auto group-hover:!flex"
             style={{ display: video?.current?.paused ? "flex" : "none" }}
@@ -149,17 +156,32 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
             </div>
             <div className="flex w-full mt-2 items-center justify-between">
               <div className="flex h-full items-center gap-5">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32px"
-                  viewBox="0 -960 960 960"
-                  width="32px"
-                  fill="#e8eaed"
-                  ref={menuPlayButton}
-                  onClick={menuPlay}
-                >
-                  <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
-                </svg>
+                {!isPlaying ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32px"
+                    viewBox="0 -960 960 960"
+                    width="32px"
+                    fill="#e8eaed"
+                    ref={menuPlayButton}
+                    onClick={menuPlay}
+                  >
+                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32px"
+                    viewBox="0 -960 960 960"
+                    width="32px"
+                    fill="#e8eaed"
+                    ref={menuPlayButton}
+                    onClick={menuPlay}
+                  >
+                    <path d="M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z" />
+                  </svg>
+                )}
+
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="24px"
