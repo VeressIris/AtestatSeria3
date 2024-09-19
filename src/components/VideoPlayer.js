@@ -143,6 +143,20 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   document.onmousemove = startInactivityTimer;
   document.onkeydown = startInactivityTimer;
 
+  function resetState() {
+    setClicks(0);
+    setCurrentTime("0:00");
+    setMaxTime("0:00");
+    setpercentTime("0%");
+    setStarted(false);
+    playButton.current.style.display = "block";
+  }
+
+  useEffect(() => {
+    video.current.load();
+    resetState();
+  }, [videoSrc]);
+
   return (
     <div className="mb-4">
       <div

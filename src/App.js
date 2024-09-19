@@ -13,6 +13,7 @@ import videos from "./videoData.json";
 import AboutPage from "./pages/AboutPage.js";
 import SearchPage from "./pages/SearchPage.js";
 import { useState } from "react";
+import EpisodePage from "./pages/EpisodePage.js";
 
 function App() {
   localStorage.setItem("videos", JSON.stringify(videos));
@@ -32,6 +33,10 @@ function App() {
             element={<MoviePage key={useLocation} />}
           />
           <Route path="/shows/:name" element={<ShowPage />} />
+          <Route
+            path="/shows/:name/:episodeTitle"
+            element={<EpisodePage key={window.location.pathname} />}
+          />
           <Route path="/categories/" element={<CategoriesPage />} />
           <Route path="/categories/:name" element={<CategoryPage />} />
           <Route path="/about" element={<AboutPage />} />

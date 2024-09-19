@@ -4,9 +4,10 @@ import Suggestions from "../components/Suggestions";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import VideoPlayer from "../components/VideoPlayer";
 
-export default function ShowPage() {
-  const { name } = useParams();
+export default function EpisodePage() {
+  const { episodeTitle } = useParams();
   const location = useLocation();
   const [show, setShow] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
@@ -26,7 +27,7 @@ export default function ShowPage() {
 
     const episodes = storedShow.episodes;
     setEpisodes(episodes);
-  }, [name, location.pathname]);
+  }, [episodeTitle, location.pathname]);
 
   if (!show) {
     return <div>Loading...</div>;
@@ -36,14 +37,8 @@ export default function ShowPage() {
 
   return (
     <div className="flex items-center flex-col my-4">
-      <img
-        src={
-          "../fireshipIO_thumbnails/" +
-          episodes[0].title.replace(/[ /?:]/g, "_") +
-          "_thumbnail.jpg"
-        }
-        alt="thumbnail"
-        className="w-[1080px] mb-4"
+      <VideoPlayer
+        videoSrc={"../../fireshipIO_videos/" + episodeTitle + ".mp4"}
       />
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
@@ -84,8 +79,12 @@ export default function ShowPage() {
         </p>
         <h2 className="text-white text-3xl font-medium mt-2">Episodes:</h2>
         <div className="">
-          {episodes.map((episode, index) => (
-            <EpisodeComponent episode={episode} index={index + 1} />
+          {episodes.map((ep, index) => (
+            <EpisodeComponent
+              episode={ep}
+              index={index + 1}
+              selected={ep.title === episodeTitle}
+            />
           ))}
         </div>
         <Suggestions title="Suggestions" suggestions={suggestions} />
