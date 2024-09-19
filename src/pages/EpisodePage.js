@@ -6,12 +6,13 @@ import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import VideoPlayer from "../components/VideoPlayer";
 
-export default function EpisodePage() {
+export default function EpisodePage({ index }) {
   const { episodeTitle } = useParams();
   const location = useLocation();
   const [show, setShow] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
   const [episodes, setEpisodes] = useState([]);
+  const [episode, setEpisode] = useState(null);
 
   useEffect(() => {
     const storedShow = JSON.parse(localStorage.getItem("video"));
@@ -27,6 +28,11 @@ export default function EpisodePage() {
 
     const episodes = storedShow.episodes;
     setEpisodes(episodes);
+
+    const selectedEpisode = episodes.filter((ep) => ep.title === episodeTitle);
+    setEpisode(selectedEpisode[0]);
+
+    window.scrollTo(0, 0);
   }, [episodeTitle, location.pathname]);
 
   if (!show) {
@@ -37,14 +43,16 @@ export default function EpisodePage() {
 
   return (
     <div className="flex items-center flex-col my-4">
+      <div className="w-full">
+        <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
+      </div>
       <VideoPlayer
         videoSrc={"../../fireshipIO_videos/" + episodeTitle + ".mp4"}
       />
       <div className="flex flex-col justify-start w-full">
-        <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
+        <h1 className="text-3xl text-white font-medium mb-2">{episodeTitle}</h1>
         <p className="text-lg text-white">
-          <span className="font-medium">Release:</span> {show.release_date} -{" "}
-          {show.end_date}
+          <span className="font-medium">Release:</span> {episode.release_date}
         </p>
         <div className="flex items-center">
           <p className="text-lg text-white font-medium pr-1">Rating:</p>
@@ -61,7 +69,8 @@ export default function EpisodePage() {
           ))}
         </div>
         <p className="text-lg text-white">
-          <span className="font-medium">Description:</span> {show.description}
+          <span className="font-medium">Description:</span>{" "}
+          {episode.description}
         </p>
         <p className="text-lg text-white">
           <span className="font-medium">Categories: </span>
