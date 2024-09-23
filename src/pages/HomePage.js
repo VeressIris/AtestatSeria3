@@ -14,7 +14,7 @@ export default function HomePage() {
     getObjectByTitle(videos, "GitHub Pull Request in 100 Seconds"),
     getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
     getObjectByTitle(videos, "Flutter in 100 seconds"),
-    getObjectByTitle(videos, "CSS Animation in 100 Seconds"),
+    getObjectByTitle(videos, "Go in 100 Seconds"),
     getObjectByTitle(
       videos,
       "Graph Search Algorithms in 100 Seconds - And Beyond with JS"
@@ -22,13 +22,11 @@ export default function HomePage() {
   ];
   const frameworks = [
     getObjectByTitle(videos, "React in 100 Seconds"),
-    getObjectByTitle(
-      videos,
-      "Next.js in 100 Seconds // Plus Full Beginner's Tutorial"
-    ),
+    getObjectByTitle(videos, "React Native in 100 Seconds"),
     getObjectByTitle(videos, "Flutter in 100 seconds"),
     getObjectByTitle(videos, "Angular in 100 Seconds"),
     getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
+    getObjectByTitle(videos, "Astro in 100 Seconds"),
   ];
   const backend = [
     getObjectByTitle(
@@ -36,6 +34,10 @@ export default function HomePage() {
       "RESTful APIs in 100 Seconds // Build an API from Scratch with Node.js Express"
     ),
     getObjectByTitle(videos, "Session vs Token Authentication in 100 Seconds"),
+    getObjectByTitle(
+      videos,
+      "Auth0 in 100 Seconds // And beyond with a Next.js Authentication Tutorial"
+    ),
     getObjectByTitle(videos, "Firebase Security in 100 Seconds"),
     getObjectByTitle(
       videos,

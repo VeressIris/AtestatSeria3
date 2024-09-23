@@ -6,6 +6,7 @@ export default function CategoriesPage() {
     "Frontend",
     "Languages",
     "Backend",
+    "Low level",
     "Web Frameworks",
     "CSS",
     "Tools",

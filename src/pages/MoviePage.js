@@ -14,6 +14,7 @@ export default function MoviePage() {
     setMovie(storedMovie);
 
     const videos = JSON.parse(localStorage.getItem("videos"));
+    console.log(videos);
     const relatedSuggestions = videos.filter((video) => {
       return video.categories.some((category) =>
         storedMovie.categories.includes(category)
@@ -22,7 +23,7 @@ export default function MoviePage() {
     setSuggestions(relatedSuggestions);
   }, [movieTitle, location.pathname]);
 
-  if (!movie) {
+  if (!movie || !movie.categories) {
     return <div>Loading...</div>;
   }
 
@@ -36,17 +37,10 @@ export default function MoviePage() {
           movie.title.replace(/[ /?:]/g, "_") +
           "_thumbnail.jpg"
         }
-        videoSrc={"../fireshipIO_videos/" + "C in 100 Seconds" + ".mp4"}
-      />
-      {/* <img
-        src={
-          "../fireshipIO_thumbnails/" +
-          movie.title.replace(/[ /?:]/g, "_") +
-          "_thumbnail.jpg"
+        videoSrc={
+          "../fireshipIO_videos/" + movie.title.replaceAll("/", "") + ".mp4"
         }
-        alt="thumbnail"
-        className="w-[1080px] mb-4"
-      /> */}
+      />
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{movie.title}</h1>
         <p className="text-lg text-white">

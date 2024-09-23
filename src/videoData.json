@@ -4,7 +4,7 @@
     "release_date": "Dec 17, 2019",
     "description": "Learn Array Map in 100 seconds (of JavaScript).",
     "rating": 9,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -20,7 +20,7 @@
     "release_date": "Dec 22, 2019",
     "description": "Learn JavaScript's Array Reduce method in 100 seconds. Take many things and reduce them down to one thing.",
     "rating": 8,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -36,7 +36,7 @@
     "release_date": "Jan 02, 2020",
     "description": "Learn how to import and export JS code with ES Modules in 100 seconds.",
     "rating": 9,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -52,7 +52,7 @@
     "release_date": "Feb 18, 2020",
     "description": "Ready to go beyond console.log? The JavaScript console can do much more than just log...",
     "rating": 8,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -116,7 +116,7 @@
     "release_date": "Mar 27, 2020",
     "description": "Learn what the \"this\" keyword does in JavaScript in 100 seconds.",
     "rating": 8,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -180,7 +180,7 @@
     "release_date": "May 19, 2020",
     "description": "Learn how to use Regular Expressions, or RegEx, in 100 Seconds.",
     "rating": 10,
-    "categories": ["Regex", "Languages", "Tools"],
+    "categories": ["Regex", "Tools"],
     "type": "movie"
   },
   {
@@ -304,19 +304,11 @@
     "type": "movie"
   },
   {
-    "title": "Next.js in 100 Seconds // Plus Full Beginner's Tutorial",
-    "release_date": "Jan 05, 2021",
-    "description": "Learn the basics of Next.js in 100 Seconds! Then build your first server-rendered react app with a full Next.js beginner's tutorial.",
-    "rating": 9,
-    "categories": ["Next.js", "React", "Frontend", "Web Frameworks"],
-    "type": "movie"
-  },
-  {
     "title": "JS Destructuring in 100 Seconds",
     "release_date": "Jan 13, 2021",
     "description": "Make your code more concise and readable by learning destructuring assignment in JavaScript in 100 seconds.",
     "rating": 8,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -332,7 +324,7 @@
     "release_date": "Jan 22, 2021",
     "description": "Learn how the question mark \"?\" in JavaScript provides syntactic sugar in three powerful ways.",
     "rating": 9,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "movie"
   },
   {
@@ -389,14 +381,6 @@
     "description": "Learn how an Application Programming Interface (API) can adhere to Representational State Transfer (REST).",
     "rating": 10,
     "categories": ["REST", "APIs", "Node.js", "Backend"],
-    "type": "movie"
-  },
-  {
-    "title": "Bitcoin ₿ in 100 Seconds // Build your Own Blockchain",
-    "release_date": "Mar 01, 2021",
-    "description": "Learn the basics of Bitcoin and how to build your own blockchain.",
-    "rating": 7,
-    "categories": ["Bitcoin", "Blockchain", "Backend"],
     "type": "movie"
   },
   {
@@ -486,7 +470,7 @@
     "end_date": "Jan 13, 2021",
     "description": "JavaScript Essentials is a concise video series covering core JavaScript concepts in just 100 seconds. Each episode explores a key feature or function, making it perfect for both beginners and experienced developers looking for a quick refresher.",
     "rating": 10,
-    "categories": ["JavaScript", "Frontend", "Languages"],
+    "categories": ["JavaScript", "Frontend"],
     "type": "show",
     "episodes": [
       {
@@ -617,5 +601,341 @@
         "description": "Learn the difference between session and token-based authentication on the web."
       }
     ]
+  },
+  {
+    "title": "PHP in 100 Seconds",
+    "release_date": "Oct 22, 2021",
+    "description": "PHP Hypertext Preprocessor is a scripting language for building dynamic websites on the server.",
+    "rating": 9,
+    "categories": ["PHP", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Python in 100 Seconds",
+    "release_date": "Oct 25, 2021",
+    "description": "Python is arguably the world's most popular programming language.",
+    "rating": 9,
+    "categories": ["Python", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "Java in 100 Seconds",
+    "release_date": "Nov 03, 2021",
+    "description": "Java is a programming language famous for its ability to compile to platform-independent bytecode.",
+    "rating": 9,
+    "categories": ["Java", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "Kotlin in 100 Seconds",
+    "release_date": "Nov 05, 2021",
+    "description": "Kotlin is a modern alternative to Java.",
+    "rating": 9,
+    "categories": ["Kotlin", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "C in 100 Seconds",
+    "release_date": "Nov 10, 2021",
+    "description": "The C Programming Language is quite possibly the most influential language of all time.",
+    "rating": 9,
+    "categories": ["C", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "Swift in 100 Seconds",
+    "release_date": "Nov 22, 2021",
+    "description": "Swift is a modern programming language developed by Apple.",
+    "rating": 9,
+    "categories": ["Swift", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "VS Code in 100 Seconds",
+    "release_date": "Nov 26, 2021",
+    "description": "Visual Studio Code is an open-source lightweight code editor.",
+    "rating": 9,
+    "categories": ["VS Code", "Development Tools"],
+    "type": "movie"
+  },
+  {
+    "title": "Haskell in 100 Seconds",
+    "release_date": "Nov 29, 2021",
+    "description": "Haskell is a purely functional programming language.",
+    "rating": 9,
+    "categories": ["Haskell", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "HTML in 100 Seconds",
+    "release_date": "Dec 03, 2021",
+    "description": "HTML is one of the core building blocks of the web.",
+    "rating": 9,
+    "categories": ["HTML", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "C# in 100 Seconds",
+    "release_date": "Dec 06, 2021",
+    "description": "C# is the programming language behind .NET and Unity.",
+    "rating": 9,
+    "categories": ["C#", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "CSS in 100 Seconds",
+    "release_date": "Dec 14, 2021",
+    "description": "CSS makes HTML websites look pretty.",
+    "rating": 9,
+    "categories": ["CSS", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "JavaScript in 100 Seconds",
+    "release_date": "Jan 13, 2022",
+    "description": "JavaScript is the programming language that built the web.",
+    "rating": 9,
+    "categories": ["JavaScript", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "C++ in 100 Seconds",
+    "release_date": "Feb 07, 2022",
+    "description": "C++ is an extremely popular object-oriented programming language.",
+    "rating": 9,
+    "categories": ["C++", "Languages", "Low level"],
+    "type": "movie"
+  },
+  {
+    "title": "Firebase in 100 Seconds",
+    "release_date": "Feb 17, 2022",
+    "description": "Firebase is a suite of tools for building apps on top of Google Cloud Platform.",
+    "rating": 9,
+    "categories": ["Firebase", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Unity in 100 Seconds",
+    "release_date": "Mar 07, 2022",
+    "description": "Build your first video game in 100 seconds with the Unity Game Engine.",
+    "rating": 9,
+    "categories": ["Unity", "Game Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Elixir in 100 Seconds",
+    "release_date": "Apr 08, 2022",
+    "description": "Elixir is a dynamic functional programming language built on top of the Erlang BEAM virtual machine.",
+    "rating": 9,
+    "categories": ["Elixir", "Languages"],
+    "type": "movie"
+  },
+  {
+    "title": "Zig in 100 Seconds",
+    "release_date": "Aug 03, 2023",
+    "description": "Zig is a general-purpose systems programming language.",
+    "rating": 9,
+    "categories": ["Zig", "Languages", "Low level"],
+    "type": "movie"
+  },
+  {
+    "title": "Nvidia CUDA in 100 Seconds",
+    "release_date": "Mar 07, 2024",
+    "description": "Learn the basics of Nvidia CUDA programming.",
+    "rating": 9,
+    "categories": ["CUDA", "Programming"],
+    "type": "movie"
+  },
+  {
+    "title": "WebRTC in 100 Seconds // Build a Video Chat app from Scratch",
+    "release_date": "Mar 15, 2021",
+    "description": "Want to build your own peer-to-peer video chat app? WebRTC is a technology that creates a realtime connection between browsers where users can exchange audio/video streams.",
+    "rating": 9,
+    "categories": ["WebRTC", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Serverless Computing in 100 Seconds",
+    "release_date": "Mar 17, 2021",
+    "description": "Serverless Computing can dramatically simplify your backend infrastructure by eliminating the need to configure, maintain, and scale servers.",
+    "rating": 9,
+    "categories": ["Serverless", "Backend Development"],
+    "type": "movie"
+  },
+  {
+    "title": "CORS in 100 Seconds",
+    "release_date": "Mar 29, 2021",
+    "description": "Cross-Origin Resource Sharing or CORS is a mechanism that allows browsers to request data from 3rd party URLs and is a common pain point for web developers.",
+    "rating": 9,
+    "categories": ["CORS", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "SQL Explained in 100 Seconds",
+    "release_date": "Apr 06, 2021",
+    "description": "Learn the fundamentals of Structured Query Language SQL! Even though it's over 40 years old, the world's most popular databases still run on SQL.",
+    "rating": 9,
+    "categories": ["SQL", "Databases"],
+    "type": "movie"
+  },
+  {
+    "title": "Svelte in 100 Seconds",
+    "release_date": "Apr 13, 2021",
+    "description": "Svelte is a JS library for building reactive UI components, but unlike React, it does not ship a runtime like Virtual DOM to the browser.",
+    "rating": 9,
+    "categories": ["Svelte", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Sass in 100 Seconds",
+    "release_date": "Apr 27, 2021",
+    "description": "Learn the basics of Sass (SCSS), a language and compiler that can make your CSS code more efficient and programmatic.",
+    "rating": 9,
+    "categories": ["Sass", "CSS"],
+    "type": "movie"
+  },
+  {
+    "title": "How a CPU Works in 100 Seconds // Apple Silicon M1 vs Intel i9",
+    "release_date": "May 06, 2021",
+    "description": "Learn how the central processing unit (CPU) works in your computer, comparing performance and architecture between Intel and Apple Silicon M1 chips.",
+    "rating": 9,
+    "categories": ["CPU", "Hardware"],
+    "type": "movie"
+  },
+  {
+    "title": "WebGL 3D Graphics Explained in 100 Seconds",
+    "release_date": "May 12, 2021",
+    "description": "WebGL makes it possible to render GPU-accelerated 3D graphics on the web. Learn the basics of 3D theory and rendering pipelines for complex graphics.",
+    "rating": 9,
+    "categories": ["WebGL", "Graphics"],
+    "type": "movie"
+  },
+  {
+    "title": "Software Testing Explained in 100 Seconds",
+    "release_date": "May 24, 2021",
+    "description": "When you develop software, it's a good idea to make sure it works by testing it. Test-Driven Development (TDD) can help reduce bugs.",
+    "rating": 9,
+    "categories": ["Software Testing", "Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Closures Explained in 100 Seconds // Tricky JavaScript Interview Prep",
+    "release_date": "Jun 17, 2021",
+    "description": "Learn about JavaScript closures and how they allow functions to 'remember' outside their local scope.",
+    "rating": 9,
+    "categories": ["JavaScript", "Programming"],
+    "type": "movie"
+  },
+  {
+    "title": "DNS Explained in 100 Seconds",
+    "release_date": "Jul 06, 2021",
+    "description": "Ever wonder how DNS works? The Domain Name System is crucial, yet few web developers understand how it operates behind the scenes.",
+    "rating": 9,
+    "categories": ["DNS", "Networking"],
+    "type": "movie"
+  },
+  {
+    "title": "Redis in 100 Seconds",
+    "release_date": "Jul 08, 2021",
+    "description": "Use the special link to try Redis Enterprise Cloud and get a $200 credit.",
+    "rating": 9,
+    "categories": ["Redis", "Databases"],
+    "type": "movie"
+  },
+  {
+    "title": "MongoDB in 100 Seconds",
+    "release_date": "Jul 14, 2021",
+    "description": "MongoDB is the world's leading NoSQL database.",
+    "rating": 9,
+    "categories": ["MongoDB", "Databases"],
+    "type": "movie"
+  },
+  {
+    "title": "Astro in 100 Seconds",
+    "release_date": "Jul 15, 2021",
+    "description": "Astro is an open-source tool that builds static HTML websites using popular frontend JavaScript frameworks.",
+    "rating": 9,
+    "categories": ["Astro", "Web Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Terraform in 100 Seconds",
+    "release_date": "Jul 27, 2021",
+    "description": "Terraform is an Infrastructure as Code tool that provisions resources in the cloud. Learn how to connect it to cloud providers.",
+    "rating": 9,
+    "categories": ["Terraform", "Cloud"],
+    "type": "movie"
+  },
+  {
+    "title": "NestJS in 100 Seconds",
+    "release_date": "Jul 28, 2021",
+    "description": "Nest is a progressive framework for building server-side applications and APIs with Node.js, leveraging TypeScript.",
+    "rating": 9,
+    "categories": ["NestJS", "Backend Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Tailwind in 100 Seconds",
+    "release_date": "Aug 26, 2021",
+    "description": "Tailwind is a utility-first CSS framework for building websites, providing thousands of tiny classes for direct use in HTML.",
+    "rating": 9,
+    "categories": ["Tailwind", "CSS"],
+    "type": "movie"
+  },
+  {
+    "title": "PostCSS in 100 Seconds",
+    "release_date": "Sep 02, 2021",
+    "description": "PostCSS is a tool that allows the use of modern CSS features while supporting legacy browsers.",
+    "rating": 9,
+    "categories": ["PostCSS", "CSS"],
+    "type": "movie"
+  },
+  {
+    "title": "Machine Learning Explained in 100 Seconds",
+    "release_date": "Sep 09, 2021",
+    "description": "Machine Learning is the process of teaching a computer to perform a task without explicit programming.",
+    "rating": 9,
+    "categories": ["Machine Learning", "AI"],
+    "type": "movie"
+  },
+  {
+    "title": "React Native in 100 Seconds",
+    "release_date": "Sep 28, 2021",
+    "description": "React Native allows developers to build cross-platform apps from a single JavaScript codebase.",
+    "rating": 9,
+    "categories": ["React Native", "Mobile Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Go in 100 Seconds",
+    "release_date": "Oct 07, 2021",
+    "description": "Learn the basics of the Go Programming Language, developed at Google for high-performance server-side applications.",
+    "rating": 9,
+    "categories": ["Go", "Programming"],
+    "type": "movie"
+  },
+  {
+    "title": "Rust in 100 Seconds",
+    "release_date": "Oct 12, 2021",
+    "description": "Rust is a memory-safe compiled programming language for building high-performance systems.",
+    "rating": 9,
+    "categories": ["Rust", "Programming", "Low level"],
+    "type": "movie"
+  },
+  {
+    "title": "Dart in 100 Seconds",
+    "release_date": "Oct 13, 2021",
+    "description": "Dart is a high-productivity programming language used by Flutter to produce fast client apps.",
+    "rating": 9,
+    "categories": ["Dart", "Programming"],
+    "type": "movie"
+  },
+  {
+    "title": "Auth0 in 100 Seconds // And beyond with a Next.js Authentication Tutorial",
+    "release_date": "Oct 18, 2021",
+    "description": "Auth0 is Authentication-as-a-Service for managing user authentication in applications.",
+    "rating": 9,
+    "categories": ["Auth0", "Authentication"],
+    "type": "movie"
   }
 ]

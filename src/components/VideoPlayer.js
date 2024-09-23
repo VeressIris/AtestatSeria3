@@ -1,4 +1,3 @@
-import { clear } from "@testing-library/user-event/dist/clear";
 import { useEffect, useRef, useState } from "react";
 
 export default function VideoPlayer({ thumbnail, videoSrc }) {
