@@ -245,13 +245,13 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
                   {currentTime} / {maxTime}
                 </p>
                 {showVolume ? (
-                  <div className="absolute w-10 h-40 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full left-20">
+                  <div className="absolute w-10 h-40 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full left-16">
                     <input
                       type="range"
                       min="1"
                       max="100"
                       defaultValue={video.current.volume * 100}
-                      className="-rotate-90 -ml-11 mt-20"
+                      className="-rotate-90 -ml-11 mt-20 accent-red-500"
                       onChange={changeVolume}
                     />
                   </div>
@@ -334,7 +334,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
                 )}
 
                 {showSpeed ? (
-                  <div className="absolute w-20 h-44 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full right-16 flex flex-col items-center justify-center">
+                  <div className="absolute w-20 h-44 bg-slate-500 bg-opacity-20 rounded-t-2xl bottom-full right-8 flex flex-col items-center justify-center">
                     <button
                       className={
                         "w-full text-white active:text-slate-400 hover:text-slate-300" +
