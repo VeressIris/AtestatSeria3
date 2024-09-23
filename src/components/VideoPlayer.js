@@ -20,7 +20,11 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   const menuPlayButton = useRef();
 
   const [clicks, setClicks] = useState(0);
-  const ads = ["https://fireship.io", "https://x.com/fireship_dev"];
+  const ads = [
+    "https://fireship.io",
+    "https://x.com/fireship_dev",
+    "https://swag.fireship.io/",
+  ];
   function getRandomAd() {
     return ads[Math.floor(Math.random() * ads.length)];
   }

@@ -4,11 +4,11 @@ import Suggestions from "../components/Suggestions";
 import VideoPlayer from "../components/VideoPlayer";
 
 export default function MoviePage() {
-  const { movieTitle } = useParams();
+  const { name } = useParams();
   const location = useLocation();
   const [movie, setMovie] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
-
+  console.log(name);
   useEffect(() => {
     const storedMovie = JSON.parse(localStorage.getItem("video"));
     setMovie(storedMovie);
@@ -21,7 +21,7 @@ export default function MoviePage() {
       );
     });
     setSuggestions(relatedSuggestions);
-  }, [movieTitle, location.pathname]);
+  }, [name, location.pathname]);
 
   if (!movie || !movie.categories) {
     return <div>Loading...</div>;
