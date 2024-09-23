@@ -88,14 +88,6 @@
     "type": "movie"
   },
   {
-    "title": "DevOps CI/CD Explained in 100 Seconds",
-    "release_date": "Mar 12, 2020",
-    "description": "What is DevOps? How to setup a CI/CD pipeline? Learn the basics of continuous integration & delivery.",
-    "rating": 8,
-    "categories": ["DevOps", "Backend", "Tools"],
-    "type": "movie"
-  },
-  {
     "title": "GitHub Pull Request in 100 Seconds",
     "release_date": "Mar 17, 2020",
     "description": "How to submit your first pull request on GitHub in 100 seconds.",

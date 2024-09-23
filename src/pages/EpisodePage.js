@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import VideoPlayer from "../components/VideoPlayer";
 
-export default function EpisodePage({ index }) {
+export default function EpisodePage() {
   const { episodeTitle } = useParams();
   const location = useLocation();
   const [show, setShow] = useState(null);
@@ -29,7 +29,9 @@ export default function EpisodePage({ index }) {
     const episodes = storedShow.episodes;
     setEpisodes(episodes);
 
-    const selectedEpisode = episodes.filter((ep) => ep.title === episodeTitle);
+    const selectedEpisode = episodes.filter(
+      (ep) => ep.title.replace("/", "") === episodeTitle
+    );
     setEpisode(selectedEpisode[0]);
 
     window.scrollTo(0, 0);

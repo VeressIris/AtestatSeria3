@@ -8,7 +8,7 @@ export default function MoviePage() {
   const location = useLocation();
   const [movie, setMovie] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
-  console.log(name);
+
   useEffect(() => {
     const storedMovie = JSON.parse(localStorage.getItem("video"));
     setMovie(storedMovie);

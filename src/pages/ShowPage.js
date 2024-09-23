@@ -52,7 +52,6 @@ export default function ShowPage() {
           videoSrc={"../fireshipIO_videos/" + selectedEpisode + ".mp4"}
         />
       )}
-
       <div className="flex flex-col justify-start w-full">
         <h1 className="text-3xl text-white font-medium mb-2">{show.title}</h1>
         <p className="text-lg text-white">
