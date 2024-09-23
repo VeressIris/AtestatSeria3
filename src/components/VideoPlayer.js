@@ -104,12 +104,25 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
   }
 
   useEffect(() => {
-    setInterval(() => {
-      setCurrentTime(convertTime(video.current.currentTime));
-      const percent =
-        video.current.currentTime / (video.current.duration / 100);
-      setpercentTime(percent + "%");
+    let isMounted = true;
+
+    const interval = setInterval(() => {
+      if (video.current) {
+        const currentTime = convertTime(video.current.currentTime);
+        const percent =
+          (video.current.currentTime / video.current.duration) * 100;
+
+        if (isMounted) {
+          setCurrentTime(currentTime);
+          setpercentTime(percent + "%");
+        }
+      }
     }, 33);
+
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {
