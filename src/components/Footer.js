@@ -34,16 +34,16 @@ export default function Footer() {
               Home
             </Link>
             <Link
-              to="/movies"
+              to="/videos"
               className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
-              Movies
+              Videos
             </Link>
             <Link
-              to="/shows"
+              to="/series"
               className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
             >
-              Shows
+              Series
             </Link>
             <Link
               to="/categories"

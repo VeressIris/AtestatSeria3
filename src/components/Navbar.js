@@ -41,8 +41,8 @@ export default function Navbar({ searchTerm, setSearchTerm }) {
           />
         </div>
         <MyAnchor text="Home" link="/" />
-        <MyAnchor text="Movies" link="/movies" />
-        <MyAnchor text="Shows" link="/shows" />
+        <MyAnchor text="Videos" link="/videos" />
+        <MyAnchor text="Series" link="/series" />
         <MyAnchor text="Categories" link="/categories" />
         <MyAnchor text="Favorites" link="/favorites" />
         <MyAnchor text="About us" link="/about" />

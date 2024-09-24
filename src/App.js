@@ -28,15 +28,15 @@ function App() {
       <div className="px-20">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/movies" element={<MoviesPage />} />
-          <Route path="/shows" element={<ShowsPage />} />
+          <Route path="/videos" element={<MoviesPage />} />
+          <Route path="/series" element={<ShowsPage />} />
           <Route
-            path="/movies/:name"
+            path="/videos/:name"
             element={<MoviePage key={useLocation} />}
           />
-          <Route path="/shows/:name" element={<ShowPage />} />
+          <Route path="/series/:name" element={<ShowPage />} />
           <Route
-            path="/shows/:name/:episodeTitle"
+            path="/series/:name/:episodeTitle"
             element={<EpisodePage key={window.location.pathname} />}
           />
           <Route path="/categories/" element={<CategoriesPage />} />

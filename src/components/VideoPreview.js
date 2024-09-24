@@ -21,9 +21,9 @@ export default function VideoPreview({ video }) {
       onClick={() => {
         localStorage.setItem("video", JSON.stringify(video));
         if (video.type === "movie") {
-          navigate("/movies/" + video.title.replace(/[/?]/g, ""));
+          navigate("/videos/" + video.title.replace(/[/?]/g, ""));
         } else {
-          navigate("/shows/" + video.title.replace(/[/?]/g, ""));
+          navigate("/series/" + video.title.replace(/[/?]/g, ""));
         }
       }}
       className="p-6 mr-2 mb-2 rounded-xl flex flex-col items-center hover:bg-slate-950 hover:scale-105 hover:cursor-pointer active:scale-100 transition-all duration-100 ease-in-out"
