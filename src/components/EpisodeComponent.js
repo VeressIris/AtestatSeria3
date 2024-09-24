@@ -33,7 +33,7 @@ export default function EpisodeComponent({ episode, index, selected }) {
           fill="#FFFFFF"
           className="ml-auto hover:cursor-pointer active:fill-slate-300 active:scale-95 transition-transform duration-100 ease-in-out"
           onClick={() => {
-            navigate(`/shows/${name}/${episode.title.replace(/[/?]/g, "")}`);
+            navigate(`/series/${name}/${episode.title.replace(/[/?]/g, "")}`);
             // window.location.reload();
           }}
         >

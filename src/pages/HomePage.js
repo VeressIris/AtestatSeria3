@@ -24,8 +24,9 @@ export default function HomePage() {
     getObjectByTitle(videos, "React in 100 Seconds"),
     getObjectByTitle(videos, "React Native in 100 Seconds"),
     getObjectByTitle(videos, "Flutter in 100 seconds"),
-    getObjectByTitle(videos, "Angular in 100 Seconds"),
     getObjectByTitle(videos, "Vue.js Explained in 100 Seconds"),
+    getObjectByTitle(videos, "Svelte in 100 Seconds"),
+    getObjectByTitle(videos, "Angular in 100 Seconds"),
     getObjectByTitle(videos, "Astro in 100 Seconds"),
   ];
   const backend = [

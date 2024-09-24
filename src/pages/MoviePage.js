@@ -56,7 +56,9 @@ export default function MoviePage() {
           "_thumbnail.jpg"
         }
         videoSrc={
-          "../fireshipIO_videos/" + movie.title.replaceAll("/", "") + ".mp4"
+          "../fireshipIO_videos/" +
+          movie.title.replaceAll("/", "").replace("?", "") +
+          ".mp4"
         }
       />
       <div className="flex flex-col justify-start w-full">

@@ -312,22 +312,6 @@
     "type": "movie"
   },
   {
-    "title": "? in NaN Seconds",
-    "release_date": "Jan 22, 2021",
-    "description": "Learn how the question mark \"?\" in JavaScript provides syntactic sugar in three powerful ways.",
-    "rating": 9,
-    "categories": ["JavaScript", "Frontend"],
-    "type": "movie"
-  },
-  {
-    "title": "~/.dotfiles in 100 Seconds",
-    "release_date": "Feb 01, 2021",
-    "description": "What are dotfiles? Take your developer productivity to the next level.",
-    "rating": 9,
-    "categories": ["Dotfiles", "Productivity", "Tools"],
-    "type": "movie"
-  },
-  {
     "title": "SEO for Developers in 100 Seconds",
     "release_date": "Feb 08, 2021",
     "description": "Learn the fundamentals of Search Engine Optimization (SEO) from the perspective of a web developer.",
@@ -336,19 +320,19 @@
     "type": "movie"
   },
   {
+    "title": "Unreal in 100 Seconds",
+    "release_date": "Jan 30, 2023",
+    "description": "Unreal engine is a collection of developer tools for building interactive 3D games, simulations, and visualizations. It provides a powerful visual editor and scripting language called blueprint to simplify the game dev workflow.",
+    "rating": 8,
+    "categories": ["Unreal", "Game Development", "Game Engines"],
+    "type": "movie"
+  },
+  {
     "title": "Vim in 100 Seconds",
     "release_date": "Feb 10, 2021",
     "description": "Vim is a keyboard-based text editor that can improve your productivity when writing code.",
     "rating": 9,
     "categories": ["Vim", "Productivity", "Tools"],
-    "type": "movie"
-  },
-  {
-    "title": "Linux Directories Explained in 100 Seconds",
-    "release_date": "Feb 12, 2021",
-    "description": "Learn the purpose of the most common Linux directories in 100 seconds.",
-    "rating": 7,
-    "categories": ["Linux", "Operating Systems"],
     "type": "movie"
   },
   {
@@ -486,11 +470,6 @@
         "description": "Ready to go beyond console.log? The JavaScript console can do much more than just log..."
       },
       {
-        "title": "What is THIS in JavaScript? in 100 Seconds",
-        "release_date": "Mar 27, 2020",
-        "description": "Learn what the 'this' keyword does in JavaScript in 100 seconds."
-      },
-      {
         "title": "Vue.js Explained in 100 Seconds",
         "release_date": "Apr 03, 2020",
         "description": "What is Vue.js? Learn the basics of Vue and build your first reactive UI component in just 100 seconds."
@@ -606,7 +585,7 @@
     "title": "Python in 100 Seconds",
     "release_date": "Oct 25, 2021",
     "description": "Python is arguably the world's most popular programming language.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Python", "Languages"],
     "type": "movie"
   },
@@ -638,10 +617,11 @@
     "title": "Swift in 100 Seconds",
     "release_date": "Nov 22, 2021",
     "description": "Swift is a modern programming language developed by Apple.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Swift", "Languages"],
     "type": "movie"
   },
+
   {
     "title": "VS Code in 100 Seconds",
     "release_date": "Nov 26, 2021",
@@ -654,7 +634,7 @@
     "title": "Haskell in 100 Seconds",
     "release_date": "Nov 29, 2021",
     "description": "Haskell is a purely functional programming language.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Haskell", "Languages"],
     "type": "movie"
   },
@@ -662,7 +642,7 @@
     "title": "HTML in 100 Seconds",
     "release_date": "Dec 03, 2021",
     "description": "HTML is one of the core building blocks of the web.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["HTML", "Web Development"],
     "type": "movie"
   },
@@ -670,7 +650,7 @@
     "title": "C# in 100 Seconds",
     "release_date": "Dec 06, 2021",
     "description": "C# is the programming language behind .NET and Unity.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["C#", "Languages"],
     "type": "movie"
   },
@@ -686,7 +666,7 @@
     "title": "JavaScript in 100 Seconds",
     "release_date": "Jan 13, 2022",
     "description": "JavaScript is the programming language that built the web.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["JavaScript", "Web Development"],
     "type": "movie"
   },
@@ -694,7 +674,7 @@
     "title": "C++ in 100 Seconds",
     "release_date": "Feb 07, 2022",
     "description": "C++ is an extremely popular object-oriented programming language.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["C++", "Languages", "Low level"],
     "type": "movie"
   },
@@ -710,8 +690,8 @@
     "title": "Unity in 100 Seconds",
     "release_date": "Mar 07, 2022",
     "description": "Build your first video game in 100 seconds with the Unity Game Engine.",
-    "rating": 9,
-    "categories": ["Unity", "Game Development"],
+    "rating": 8,
+    "categories": ["Unity", "Game Development", "Game Engines"],
     "type": "movie"
   },
   {
@@ -751,7 +731,7 @@
     "release_date": "Mar 17, 2021",
     "description": "Serverless Computing can dramatically simplify your backend infrastructure by eliminating the need to configure, maintain, and scale servers.",
     "rating": 9,
-    "categories": ["Serverless", "Backend Development"],
+    "categories": ["Serverless", "Backend"],
     "type": "movie"
   },
   {
@@ -775,15 +755,7 @@
     "release_date": "Apr 13, 2021",
     "description": "Svelte is a JS library for building reactive UI components, but unlike React, it does not ship a runtime like Virtual DOM to the browser.",
     "rating": 9,
-    "categories": ["Svelte", "Web Development"],
-    "type": "movie"
-  },
-  {
-    "title": "Sass in 100 Seconds",
-    "release_date": "Apr 27, 2021",
-    "description": "Learn the basics of Sass (SCSS), a language and compiler that can make your CSS code more efficient and programmatic.",
-    "rating": 9,
-    "categories": ["Sass", "CSS"],
+    "categories": ["Svelte", "Web Development", "Web Frameworks"],
     "type": "movie"
   },
   {
@@ -798,7 +770,7 @@
     "title": "WebGL 3D Graphics Explained in 100 Seconds",
     "release_date": "May 12, 2021",
     "description": "WebGL makes it possible to render GPU-accelerated 3D graphics on the web. Learn the basics of 3D theory and rendering pipelines for complex graphics.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["WebGL", "Graphics"],
     "type": "movie"
   },
@@ -808,6 +780,14 @@
     "description": "When you develop software, it's a good idea to make sure it works by testing it. Test-Driven Development (TDD) can help reduce bugs.",
     "rating": 9,
     "categories": ["Software Testing", "Development"],
+    "type": "movie"
+  },
+  {
+    "title": "Godot in 100 Seconds",
+    "release_date": "Oct 24, 2022",
+    "description": "Godot is a popular open source engine for building 2D and 3D games. It is similar to Unity in many ways, but is lightweight (35Mb) and provides it's own custom scripting language called GDScript.",
+    "rating": 9,
+    "categories": ["Game Development", "Game Engines"],
     "type": "movie"
   },
   {
@@ -822,7 +802,7 @@
     "title": "DNS Explained in 100 Seconds",
     "release_date": "Jul 06, 2021",
     "description": "Ever wonder how DNS works? The Domain Name System is crucial, yet few web developers understand how it operates behind the scenes.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["DNS", "Networking"],
     "type": "movie"
   },
@@ -838,7 +818,7 @@
     "title": "MongoDB in 100 Seconds",
     "release_date": "Jul 14, 2021",
     "description": "MongoDB is the world's leading NoSQL database.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["MongoDB", "Databases"],
     "type": "movie"
   },
@@ -846,7 +826,7 @@
     "title": "Astro in 100 Seconds",
     "release_date": "Jul 15, 2021",
     "description": "Astro is an open-source tool that builds static HTML websites using popular frontend JavaScript frameworks.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["Astro", "Web Development"],
     "type": "movie"
   },
@@ -854,7 +834,7 @@
     "title": "Terraform in 100 Seconds",
     "release_date": "Jul 27, 2021",
     "description": "Terraform is an Infrastructure as Code tool that provisions resources in the cloud. Learn how to connect it to cloud providers.",
-    "rating": 9,
+    "rating": 7,
     "categories": ["Terraform", "Cloud"],
     "type": "movie"
   },
@@ -862,8 +842,8 @@
     "title": "NestJS in 100 Seconds",
     "release_date": "Jul 28, 2021",
     "description": "Nest is a progressive framework for building server-side applications and APIs with Node.js, leveraging TypeScript.",
-    "rating": 9,
-    "categories": ["NestJS", "Backend Development"],
+    "rating": 7,
+    "categories": ["NestJS", "Backend"],
     "type": "movie"
   },
   {
@@ -878,7 +858,7 @@
     "title": "PostCSS in 100 Seconds",
     "release_date": "Sep 02, 2021",
     "description": "PostCSS is a tool that allows the use of modern CSS features while supporting legacy browsers.",
-    "rating": 9,
+    "rating": 8,
     "categories": ["PostCSS", "CSS"],
     "type": "movie"
   },
@@ -902,7 +882,7 @@
     "title": "Go in 100 Seconds",
     "release_date": "Oct 07, 2021",
     "description": "Learn the basics of the Go Programming Language, developed at Google for high-performance server-side applications.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Go", "Programming"],
     "type": "movie"
   },
@@ -918,8 +898,32 @@
     "title": "Dart in 100 Seconds",
     "release_date": "Oct 13, 2021",
     "description": "Dart is a high-productivity programming language used by Flutter to produce fast client apps.",
-    "rating": 9,
+    "rating": 10,
     "categories": ["Dart", "Programming"],
+    "type": "movie"
+  },
+  {
+    "title": "PyTorch in 100 Seconds",
+    "release_date": "Mar 20, 2023",
+    "description": "PyTorch is a deep learning framework for used to build artificial intelligence software with Python. Learn how to build a basic neural network from scratch with PyTorch 2. ",
+    "rating": 9,
+    "categories": ["Machine Learning", "AI", "Python"],
+    "type": "movie"
+  },
+  {
+    "title": "Arduino in 100 Seconds",
+    "release_date": "Dec 12, 2022",
+    "description": "Arduino is a programmable circuit board that makes it possible for the average developer to build custom hardware products. Learn about Arduino's architecture, microcontroller, programming language, and IDE in 100 seconds. ",
+    "rating": 9,
+    "categories": ["Low level", "Hardware"],
+    "type": "movie"
+  },
+  {
+    "title": "Supabase in 100 Seconds",
+    "release_date": "Nov 25, 2022",
+    "description": "Supabase is the open-source Firebase alternative that features an impressive collection of tools like PostgreSQL, user authentication, serverless edge functions, and more. ",
+    "rating": 9,
+    "categories": ["Databases", "Backend"],
     "type": "movie"
   },
   {
@@ -928,6 +932,14 @@
     "description": "Auth0 is Authentication-as-a-Service for managing user authentication in applications.",
     "rating": 9,
     "categories": ["Auth0", "Authentication"],
+    "type": "movie"
+  },
+  {
+    "title": "TensorFlow in 100 Seconds",
+    "release_date": "Aug 03, 2022",
+    "description": "TensorFlow is a tool for machine learning capable of building deep neural networks with high-level Python code. It provides developer-friendly APIs that help software engineers train, analyze, and deploy ML models. ",
+    "rating": 9,
+    "categories": ["Machine Learning", "AI", "Python"],
     "type": "movie"
   }
 ]
