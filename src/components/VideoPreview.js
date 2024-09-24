@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function VideoPreview({ video }) {
   const navigate = useNavigate();
-  console.log(video.title);
+
   function getThumbnailFileName(title) {
     return (
       "/fireshipIO_thumbnails/" +

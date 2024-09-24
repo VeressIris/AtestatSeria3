@@ -14,6 +14,7 @@ import AboutPage from "./pages/AboutPage.js";
 import SearchPage from "./pages/SearchPage.js";
 import { useState } from "react";
 import EpisodePage from "./pages/EpisodePage.js";
+import AllCategoriesPage from "./pages/AllCategoriesPage.js";
 
 function App() {
   localStorage.setItem("videos", JSON.stringify(videos));
@@ -39,6 +40,7 @@ function App() {
           />
           <Route path="/categories/" element={<CategoriesPage />} />
           <Route path="/categories/:name" element={<CategoryPage />} />
+          <Route path="/categories/all" element={<AllCategoriesPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route
             path="/search"
