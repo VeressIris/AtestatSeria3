@@ -133,6 +133,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     return () => document.removeEventListener("keydown", playIfSpace);
   });
 
+  const timeline = useRef();
   function setProgress(event) {
     const mouseX = event.clientX;
     const barWidth = event.target.offsetWidth;
@@ -216,6 +217,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
           >
             <div className="w-full h-2 bg-black" onClick={setProgress}>
               <div
+                ref={timeline}
                 className="h-full bg-red-500"
                 style={{ width: percentTime }}
               ></div>
