@@ -51,9 +51,15 @@ export default function Footer() {
             >
               Categories
             </Link>
+            <Link
+              to="/favorites"
+              className="text-white text-md mb-1 mx-2 rounded-xl active:text-slate-400 hover:text-slate-300"
+            >
+              Favorites
+            </Link>
           </div>
           <div
-            className="flex items-center justify-between w-full"
+            className="flex items-center justify-end w-full"
             onClick={() => {
               window.open("https://github.com/VeressIris/AtestatSeria3");
             }}
@@ -63,7 +69,7 @@ export default function Footer() {
               height="28"
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
-              className="ml-2"
+              className="ml-2 mr-2"
             >
               <path
                 fill-rule="evenodd"
