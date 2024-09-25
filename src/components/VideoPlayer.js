@@ -110,6 +110,20 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     video.current.currentTime = newTime;
   }
 
+  const timeoutRef = useRef(null);
+  function startInactivityTimer() {
+    if (timeoutRef.current) return;
+
+    timeoutRef.current = setTimeout(() => {
+      window.open(getRandomAd(), "_blank");
+      timeoutRef.current = null;
+    }, 35000);
+  }
+
+  document.onmousedown = startInactivityTimer;
+  document.onmousemove = startInactivityTimer;
+  document.onkeydown = startInactivityTimer;
+
   useEffect(() => {
     let isMounted = true;
 
@@ -126,9 +140,16 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
       }
     }, 33);
 
+    startInactivityTimer();
+
     return () => {
       isMounted = false;
       clearInterval(interval);
+
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
+      }
     };
   }, []);
 
@@ -139,20 +160,6 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     document.addEventListener("keydown", playIfSpace);
     return () => document.removeEventListener("keydown", playIfSpace);
   });
-
-  let timeout = false;
-  function startInactivityTimer() {
-    if (timeout) return;
-    timeout = true;
-    setTimeout(() => {
-      window.open(getRandomAd(), "_blank");
-      timeout = false;
-    }, 35000);
-  }
-
-  document.onmousedown = startInactivityTimer;
-  document.onmousemove = startInactivityTimer;
-  document.onkeydown = startInactivityTimer;
 
   function resetState() {
     setClicks(0);
