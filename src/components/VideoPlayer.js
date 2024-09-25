@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 export default function VideoPlayer({ thumbnail, videoSrc }) {
   const [currentTime, setCurrentTime] = useState("0:00");
   const [maxTime, setMaxTime] = useState("0:00");
-  const [percentTime, setpercentTime] = useState("0%");
+  const [percentTime, setpercentTime] = useState(0);
 
   function convertTime(sec) {
     const sec2 = Math.floor(sec);
@@ -103,6 +103,13 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     setShowSpeed(false);
   }
 
+  function updateTime(e) {
+    const newValue = e.target.value;
+    setpercentTime(newValue);
+    const newTime = (video.current.duration * newValue) / 100;
+    video.current.currentTime = newTime;
+  }
+
   useEffect(() => {
     let isMounted = true;
 
@@ -114,7 +121,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
 
         if (isMounted) {
           setCurrentTime(currentTime);
-          setpercentTime(percent + "%");
+          setpercentTime(percent);
         }
       }
     }, 33);
@@ -132,19 +139,6 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     document.addEventListener("keydown", playIfSpace);
     return () => document.removeEventListener("keydown", playIfSpace);
   });
-
-  const timeline = useRef();
-  function setProgress(event) {
-    const mouseX = event.clientX;
-    const barWidth = event.target.offsetWidth;
-    const clickX = mouseX - event.target.getBoundingClientRect().left;
-
-    const newProgress = (clickX / barWidth) * 100;
-    setpercentTime(newProgress + "%");
-
-    video.current.currentTime = (clickX / barWidth) * video.current.duration;
-    setCurrentTime(convertTime(video.current.currentTime));
-  }
 
   let timeout = false;
   function startInactivityTimer() {
@@ -164,7 +158,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     setClicks(0);
     setCurrentTime("0:00");
     setMaxTime("0:00");
-    setpercentTime("0%");
+    setpercentTime(0);
     setStarted(false);
     playButton.current.style.display = "block";
   }
@@ -173,6 +167,8 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
     video.current.load();
     resetState();
   }, [videoSrc]);
+
+  const timelineRef = useRef();
 
   return (
     <div className="mb-4">
@@ -215,13 +211,17 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
             className="py-3 absolute bottom-0 left-0 w-full px-5 bg-slate-500 bg-opacity-20 flex flex-col items-center pointer-events-auto group-hover:!flex"
             style={{ display: video?.current?.paused ? "flex" : "none" }}
           >
-            <div className="w-full h-2 bg-black" onClick={setProgress}>
-              <div
-                ref={timeline}
-                className="h-full bg-red-500"
-                style={{ width: percentTime }}
-              ></div>
-            </div>
+            <input
+              ref={timelineRef}
+              type="range"
+              className="w-full accent-red-500 active:accent-red-600"
+              min="0"
+              max="100"
+              defaultValue="0"
+              step="0.05"
+              onChange={updateTime}
+              value={percentTime}
+            />
             <div className="flex w-full mt-2 items-center justify-between">
               <div className="flex h-full items-center gap-5">
                 {!isPlaying ? (
