@@ -151,7 +151,7 @@ export default function VideoPlayer({ thumbnail, videoSrc }) {
         timeoutRef.current = null;
       }
     };
-  }, []);
+  });
 
   useEffect(() => {
     function playIfSpace(key) {
